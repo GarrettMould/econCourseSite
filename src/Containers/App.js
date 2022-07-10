@@ -3,23 +3,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { ContainerPadded } from "../Components/styles/Containers.styled";
 import Header from "../Components/Header";
-import CourseOverviewHeadline from "../Elements/CourseOverviewHeadline";
-import AllUnitsView from "../Components/AllUnitsView";
+import AllUnitsPage from "../Components/AllUnitsPage";
+import UnitOverviewPage from "../Components/UnitOverviewPage";
 
 import { courseInformation } from "../CourseInformation";
-import UnitPageHeadline from "../Elements/UnitPageHeadline";
-import DropDownButton from "../Elements/DropDownButton";
 
 const App = (props) => {
   const [courseInfo, setCourseInfo] = useState(courseInformation);
+  const [selectedUnit, setSelectedUnit] = useState(0);
+  const [selectedUnitLessons, setSelectedUnitLessons] = useState(null);
+
   return (
     <div>
       <ContainerPadded>
         <Header></Header>
-        <CourseOverviewHeadline></CourseOverviewHeadline>
-        <AllUnitsView courseInfo={courseInfo}></AllUnitsView>
-        <DropDownButton></DropDownButton>
-        <UnitPageHeadline text="Lesson Materials"></UnitPageHeadline>
+        <AllUnitsPage courseInfo={courseInfo}></AllUnitsPage>
+        <UnitOverviewPage
+          selectedUnit={selectedUnit}
+          courseInfo={courseInfo}
+        ></UnitOverviewPage>
       </ContainerPadded>
     </div>
   );

@@ -1,6 +1,6 @@
 import { Headline } from "./styles/Headlines.styled";
 import { FlexRow } from "../Components/styles/FlexContainers.styled";
-const UnitPageHeadline = (props) => {
+const UnitOverviewHeadline = (props) => {
   return (
     <FlexRow
       justifyCotent="center"
@@ -8,9 +8,9 @@ const UnitPageHeadline = (props) => {
       width="100%"
       padding="3% 0%"
     >
-      <Headline fontSize="2.5vw">{props.text}</Headline>
+      <Headline fontSize="3vw">{props.text}</Headline>
     </FlexRow>
   );
 };
 
-export default UnitPageHeadline;
+export default UnitOverviewHeadline;

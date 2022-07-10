@@ -1,3 +1,5 @@
+import CourseOverviewHeadline from "../Elements/CourseOverviewHeadline";
+
 import { GridContainer, GridColumn, GridRow } from "./styles/Grid.styled";
 import {
   UnitCard,
@@ -5,6 +7,7 @@ import {
   UnitName,
   UnitInfoContainer,
 } from "./styles/AllUnitsView.styled";
+
 import { PaddingTop } from "./styles/Containers.styled";
 
 const AllUnitsView = (props) => {
@@ -22,6 +25,7 @@ const AllUnitsView = (props) => {
   });
   return (
     <>
+      <CourseOverviewHeadline></CourseOverviewHeadline>
       <GridContainer>
         <GridRow>{mappedUnits}</GridRow>
       </GridContainer>
