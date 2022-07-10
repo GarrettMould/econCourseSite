@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const GridContainer = styled.div`
+export const GridContainer = styled.div.attrs((props) => ({
+  width: props.width,
+}))`
+  width: ${(props) => props.width};
   display: grid;
   gap: 1em;
 `;

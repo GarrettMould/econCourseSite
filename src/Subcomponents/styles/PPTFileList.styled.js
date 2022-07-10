@@ -7,13 +7,13 @@ export const PPTList = styled.ul`
 }
 `;
 export const ListItem = styled.li.attrs((props) => ({
-  bulletColor: props.bulletColor,
+  color: props.color,
 }))`
   font-size: 2.5vw;
   padding-bottom: 2rem;
 
   a {
-    color: ${(props) => props.bulletColor};
+    color: ${(props) => props.color};
   }
 
   a:hover {

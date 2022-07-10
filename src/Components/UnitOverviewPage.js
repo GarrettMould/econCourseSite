@@ -1,6 +1,7 @@
 import DropDownButton from "../Elements/DropDownButton";
 import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
 import PPTFileList from "../Subcomponents/PPTFileList";
+import UnitConceptList from "../Subcomponents/UnitConceptList";
 
 const UnitOverviewPage = (props) => {
   return (
@@ -11,6 +12,11 @@ const UnitOverviewPage = (props) => {
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></PPTFileList>
+      <UnitOverviewHeadline text="Unit Concepts"></UnitOverviewHeadline>
+      <UnitConceptList
+        selectedUnit={props.selectedUnit}
+        courseInfo={props.courseInfo}
+      ></UnitConceptList>
     </>
   );
 };
