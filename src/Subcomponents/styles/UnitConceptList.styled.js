@@ -16,5 +16,5 @@ export const ConceptName = styled.div`
   font-size: 1.4vw;
   font-family: var(--emphasizedText);
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem 0.5rem 1rem;
 `;

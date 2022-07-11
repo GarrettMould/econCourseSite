@@ -76,53 +76,87 @@ export var courseInformation = [
     ],
     unitLessons: [
       {
-        name: "U1L1: Scarcity - The Fundamental Problem of Economics",
+        name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
         subtopic: 1,
         color: "red",
       },
       {
-        name: "U1L2: Trade-Offs and Opportunity Costs",
+        name: "U1-L2: Trade-Offs and Opportunity Costs",
         subtopic: 1,
       },
       {
-        name: "U1L3: Incentives (Monetary and Non-Monetary)",
+        name: "U1-L3: Incentives (Monetary and Non-Monetary)",
         subtopic: 1,
       },
       {
-        name: "U1L4: Three Fundamental Macroeconomic Questions",
+        name: "U1-L4: Three Fundamental Macroeconomic Questions",
         subtopic: 2,
       },
       {
-        name: "U1L5: Basic Economic Systems",
+        name: "U1-L5: Basic Economic Systems",
         subtopic: 2,
       },
       {
-        name: "U1L6: Market Economies, Command Economies, Mixed Economies",
+        name: "U1-L6: Market Economies, Command Economies, Mixed Economies",
         subtopic: 2,
       },
       {
-        name: "U1L7: The Benefits and Key Features of Market Economies",
+        name: "U1-L7: The Benefits and Key Features of Market Economies",
         subtopic: 3,
       },
       {
-        name: "U1L8: Adam Smith and The Wealth of Nations",
+        name: "U1-L8: Adam Smith and The Wealth of Nations",
         subtopic: 3,
       },
       {
-        name: "U1L9: An Introduction to Supply and Demand",
+        name: "U1-L9: An Introduction to Supply and Demand",
         subtopic: 4,
       },
       {
-        name: "U1L10: The Laws of Supply and Demand",
+        name: "U1-L10: The Laws of Supply and Demand",
         subtopic: 4,
       },
       {
-        name: "U1L11: Non-Price Determinants of Supply and Demand",
+        name: "U1-L11: Non-Price Determinants of Supply and Demand",
         subtopic: 4,
       },
       {
-        name: "U1L12: Unit 1 Review",
+        name: "U1-L12: Unit 1 Review",
         subtopic: 0,
+      },
+    ],
+    additionalResources: [
+      {
+        name: "Real Life Examples of Scarcity",
+        type: "Web Article",
+        summary:
+          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
+        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+        subtopic: 1,
+      },
+      {
+        name: "How Countries Across the World Rationed Vaccines",
+        type: "Podcast",
+        summary:
+          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
+        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+        subtopic: 2,
+      },
+      {
+        name: "The Freest Economies in the World",
+        type: "YouTube Video",
+        summary:
+          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
+        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+        subtopic: 3,
+      },
+      {
+        name: "Supply and Demand in 8 Minutes",
+        type: "YouTube Video",
+        summary:
+          "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
+        link: "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
+        subtopic: 4,
       },
     ],
   },

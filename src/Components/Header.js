@@ -14,10 +14,13 @@ const Header = (props) => {
 
       <NavBar>
         <a href="#">
-          <li>Instructions</li>
+          <li>About</li>
         </a>
         <a href="#">
-          <li>Contact</li>
+          <li>Practice Tests</li>
+        </a>
+        <a href="#">
+          <li>Resources</li>
         </a>
       </NavBar>
     </FlexRow>

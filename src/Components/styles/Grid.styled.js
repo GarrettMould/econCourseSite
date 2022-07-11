@@ -18,6 +18,7 @@ export const GridColumn = styled.div.attrs((props) => ({
   size: props.size,
   justifySelf: props.justifySelf,
 }))`
+  height: 100%;
   grid-column: span ${(props) => props.size} / auto;
   justify-self: ${(props) => props.justifySelf};
 `;
