@@ -159,6 +159,125 @@ export var courseInformation = [
         subtopic: 4,
       },
     ],
+    unitPracticeTest: [
+      {
+        questionNumber: 1,
+        subtopic: 1,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 2,
+        subtopic: 1,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 3,
+        subtopic: 1,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 4,
+        subtopic: 2,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 5,
+        subtopic: 2,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 6,
+        subtopic: 3,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 7,
+        subtopic: 3,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 8,
+        subtopic: 4,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+      {
+        questionNumber: 9,
+        subtopic: 4,
+        questionText:
+          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+        options: [
+          { name: "factors of production / resources", id: 1 },
+          { name: "resources / goods", id: 2 },
+          { name: "goods / resources", id: 3 },
+          { name: "demand / resources", id: 4 },
+        ],
+        correctAnswer: 4,
+      },
+    ],
   },
   {
     id: 1,
