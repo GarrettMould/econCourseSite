@@ -20,7 +20,7 @@ const PPTFileList = (props) => {
     } else {
       color = "#121212";
     }
-    
+    console.log(color);
     return (
       <ListItem color={color} key={i}>
         <a href="#">{lesson.name}</a>

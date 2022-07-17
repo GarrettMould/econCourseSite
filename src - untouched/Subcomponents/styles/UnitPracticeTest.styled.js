@@ -42,9 +42,7 @@ export const OptionButton = styled.input.attrs((props) => ({
   background-color: var(--primaryWhite);
   height: 1.4em;
   width: 1.4em;
-  border-radius: 100%;
-  transition: all 0.2s ease-out;
-  border: 2px solid rgba(197, 197, 197, 0.7);
+  border-radius: 1.4em;
   cursor: pointer;
   margin-right: 1rem;
   outline: none;
@@ -58,16 +56,11 @@ export const OptionButton = styled.input.attrs((props) => ({
     top: 50%;
     left: 0;
     right: 0;
-
     transform: translateY(-50%);
     background: ${(props) => props.backgroundColor};
     opacity: 0;
     border-radius: 100%;
     transition: width 0.2s ease-out, height 0.2s ease-out;
-  }
-
-  &:checked {
-    border: 2px solid rgba(197, 197, 197, 1);
   }
   &:checked:before {
     content: "";

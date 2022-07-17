@@ -7,7 +7,7 @@ const CourseOverviewHeadline = (props) => {
       justifyContent="center"
       alignItems="center"
       width="100%"
-      padding="5% 0% 3% 0%"
+      padding="5% 0%"
     >
       <Headline fontSize="4.5vw">Course Overview</Headline>
     </FlexRow>

@@ -22,16 +22,16 @@ const UnitPracticeTest = (props) => {
     var backgroundColor;
     var borderColor;
     if (question.subtopic == 1) {
-      borderColor = "rgba(255, 195, 0, 0.2)";
+      borderColor = "#FFC300";
       backgroundColor = "rgba(255, 195, 0, 0.5)";
     } else if (question.subtopic == 2) {
-      borderColor = "rgba(3, 255, 6, 0.2)";
+      borderColor = "#03FF06";
       backgroundColor = "rgba(3, 255, 6, 0.5)";
     } else if (question.subtopic == 3) {
-      borderColor = "rgba(255, 3, 243, 0.2)";
+      borderColor = "#FF03F3";
       backgroundColor = "rgba(255, 3, 243, 0.5)";
     } else if (question.subtopic == 4) {
-      borderColor = "rgba(3, 42, 255, 0.2)";
+      borderColor = "#032AFF";
       backgroundColor = "rgba(3, 42, 255, 0.5)";
     } else if (question.subtopic == 0) {
       borderColor = "#FF0303";

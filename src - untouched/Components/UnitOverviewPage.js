@@ -1,5 +1,4 @@
-import ChangeUnitButton from "../Elements/ChangeUnitButton";
-import { ChangeUnit } from "../Elements/styles/ChangeUnitButton.styled";
+import DropDownButton from "../Elements/DropDownButton";
 import SubmitButton from "../Elements/SubmitButton";
 import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
 import AdditionalResources from "../Subcomponents/AdditionalResources";
@@ -11,28 +10,22 @@ import { PaddingTop } from "./styles/Containers.styled";
 const UnitOverviewPage = (props) => {
   return (
     <>
-    <PaddingTop></PaddingTop>
-      <ChangeUnitButton type="previous" selectedUnit={props.selectedUnit} courseInfo={props.courseInfo}></ChangeUnitButton>
-      <ChangeUnitButton type="next" selectedUnit={props.selectedUnit} courseInfo={props.courseInfo}></ChangeUnitButton>
-      <PaddingTop></PaddingTop>
+      <DropDownButton></DropDownButton>
       <UnitOverviewHeadline text="Lesson Materials"></UnitOverviewHeadline>
       <PPTFileList
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></PPTFileList>
-      <PaddingTop></PaddingTop>
       <UnitOverviewHeadline text="Unit Concepts"></UnitOverviewHeadline>
       <UnitConceptList
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></UnitConceptList>
-      <PaddingTop></PaddingTop>
       <UnitOverviewHeadline text="Additional Resources"></UnitOverviewHeadline>
       <AdditionalResources
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></AdditionalResources>
-      <PaddingTop></PaddingTop>
       <UnitOverviewHeadline text="Unit Practice Test"></UnitOverviewHeadline>
       <UnitPracticeTest
         selectedUnit={props.selectedUnit}

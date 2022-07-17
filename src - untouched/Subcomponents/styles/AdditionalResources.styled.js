@@ -8,7 +8,6 @@ export const ResourceCard = styled.div.attrs((props) => ({
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  height: 100%;
   background-color: ${(props) => props.backgroundColor};
   border: 4px solid ${(props) => props.borderColor};
   border-radius: 10px;

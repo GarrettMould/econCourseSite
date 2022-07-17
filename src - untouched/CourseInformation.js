@@ -3,10 +3,7 @@ export var courseInformation = [
     id: 0,
     unitNumber: 1,
     unitName: "Introduction to Economics",
-    unitBackgroundColor: "rgba(255, 195, 0, 0.5)",
-    unitBorderColor: "rgba(255, 195, 0, 0.2)",
-    unitSolidColor: "#ffc300",
-
+    unitColor: "#5e17fe",
     unitConcepts: [
       {
         name: "Scarcity",
@@ -286,24 +283,18 @@ export var courseInformation = [
     id: 1,
     unitNumber: 2,
     unitName: "Free Market and Business",
-    unitBackgroundColor: "rgba(3, 255, 6, 0.5)",
-    unitBorderColor: "rgba(3, 255, 6, 0.2)",
-    unitSolidColor: "#03ff06",
+    unitColor: "#56d62a",
   },
   {
     id: 2,
     unitNumber: 3,
     unitName: "Government",
-    unitBackgroundColor: "rgba(255, 3, 243, 0.5)",
-    unitBorderColor: "rgba(255, 3, 243, 0.2)",
-    unitSolidColor: "#ff03f3",
+    unitColor: "#ffad28",
   },
   {
     id: 3,
     unitNumber: 4,
     unitName: "Regulations",
-    unitBackgroundColor: "rgba(3, 42, 255, 0.5)",
-    unitBorderColor: "rgba(3, 42, 255, 0.2)",
-    unitSolidColor: "#032aff",
+    unitColor: "#FF3333",
   },
 ];

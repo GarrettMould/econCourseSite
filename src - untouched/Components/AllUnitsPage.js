@@ -6,15 +6,15 @@ import {
   UnitNumber,
   UnitName,
   UnitInfoContainer,
-} from "./styles/AllUnitsPage.styled";
+} from "./styles/AllUnitsView.styled";
 
 import { PaddingTop } from "./styles/Containers.styled";
 
-const AllUnitsPage = (props) => {
+const AllUnitsView = (props) => {
   const mappedUnits = props.courseInfo.map((unit, i) => {
     return (
       <GridColumn size="3">
-        <UnitCard backgroundColor={unit.unitBackgroundColor} borderColor={unit.unitBorderColor}>
+        <UnitCard backgroundColor={unit.unitColor}>
           <UnitInfoContainer>
             <UnitNumber>{unit.unitNumber}</UnitNumber>
             <UnitName>{unit.unitName}</UnitName>
@@ -33,4 +33,4 @@ const AllUnitsPage = (props) => {
   );
 };
 
-export default AllUnitsPage;
+export default AllUnitsView;

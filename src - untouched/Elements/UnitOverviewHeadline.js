@@ -1,17 +1,16 @@
 import { Headline } from "./styles/Headlines.styled";
 import { FlexRow } from "../Components/styles/FlexContainers.styled";
-
-const CourseOverviewHeadline = (props) => {
+const UnitOverviewHeadline = (props) => {
   return (
     <FlexRow
-      justifyContent="center"
+      justifyCotent="center"
       alignItems="center"
       width="100%"
-      padding="5% 0% 3% 0%"
+      padding="3% 0%"
     >
-      <Headline fontSize="4.5vw">Course Overview</Headline>
+      <Headline fontSize="3vw">{props.text}</Headline>
     </FlexRow>
   );
 };
 
-export default CourseOverviewHeadline;
+export default UnitOverviewHeadline;

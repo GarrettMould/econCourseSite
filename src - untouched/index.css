@@ -3,27 +3,16 @@
   --primaryWhite: #fff;
   --emphasizedText: "CalibreSemibold";
   --lessEmphasizedText: "CalibreMedium";
-  --backgroundSTOne: "rgba(255, 195, 0, 0.5)",
-  --backgroundSTTwo: "rgba(3, 255, 6, 0.5)", 
-  --backgroundSTThree: "rgba(255, 3, 243, 0.5)",
-  --backgroundSTFour: "rgba(3, 42, 255, 0.5)",
-  --borderSTOne:  "#FFC300", 
-  --borderSTTwo:  "#03FF06",
-  --borderSTThree:  "#FF03F3",
-  --borderSTFour:  "#032AFF",
 }
 
 body {
-  background-color: rgba(226, 212, 255, 0.5) !important; 
-  border: 2px solid rgba(226, 212, 255, 1);
-  margin: 4.75rem 0.5rem 0.4rem 0.5rem !important;
-  border-radius: 0.25rem;
+  margin: 0;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#root { 
-  background-color: var(--primaryWhite);
 }
 
 code {

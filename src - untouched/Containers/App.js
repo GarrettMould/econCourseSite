@@ -2,7 +2,6 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { ContainerPadded } from "../Components/styles/Containers.styled";
-import BannerTop from "../Elements/BannerTop";
 import Header from "../Components/Header";
 import AllUnitsPage from "../Components/AllUnitsPage";
 import UnitOverviewPage from "../Components/UnitOverviewPage";
@@ -16,7 +15,6 @@ const App = (props) => {
 
   return (
     <div>
-      <BannerTop text="This is NOT the official course website. Visit the Edmentum site for further information"></BannerTop>
       <ContainerPadded>
         <Header></Header>
         <AllUnitsPage courseInfo={courseInfo}></AllUnitsPage>

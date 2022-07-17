@@ -4,10 +4,8 @@ export const PPTList = styled.ul`
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding-left: 0;
- margin-bottom: 0;
-
-`
+}
+`;
 export const ListItem = styled.li.attrs((props) => ({
   color: props.color,
 }))`
