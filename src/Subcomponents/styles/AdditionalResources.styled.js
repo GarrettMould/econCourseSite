@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ResourceCard = styled.div.attrs((props) => ({
   backgroundColor: props.backgroundColor,
   borderColor: props.borderColor,
+  textColor: props.textColor,
 }))`
   display: flex;
   flex-direction: column;
@@ -10,7 +11,7 @@ export const ResourceCard = styled.div.attrs((props) => ({
   width: 100%;
   height: 100%;
   background-color: ${(props) => props.backgroundColor};
-  border: 4px solid ${(props) => props.borderColor};
+  border: 3px solid ${(props) => props.borderColor};
   border-radius: 10px;
 
   div {
@@ -41,7 +42,7 @@ export const ResourceCard = styled.div.attrs((props) => ({
     font-size: 2vw;
     font-family: var(--emphasizedText);
     background-color: transparent;
-    color: ${(props) => props.borderColor};
+    color: ${(props) => props.textColor};
   }
 
   p {

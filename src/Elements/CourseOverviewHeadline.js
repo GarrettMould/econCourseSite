@@ -9,7 +9,7 @@ const CourseOverviewHeadline = (props) => {
       width="100%"
       padding="5% 0% 3% 0%"
     >
-      <Headline fontSize="4.5vw">Course Overview</Headline>
+      <Headline fontSize="4vw">Course Overview</Headline>
     </FlexRow>
   );
 };

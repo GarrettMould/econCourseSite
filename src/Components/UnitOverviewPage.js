@@ -9,13 +9,36 @@ import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
 import { PaddingTop } from "./styles/Containers.styled";
 
 const UnitOverviewPage = (props) => {
+  var unit = props.courseInfo[props.selectedUnit].unitNumber;
+  console.log(unit);
   return (
     <>
-    <PaddingTop></PaddingTop>
-      <ChangeUnitButton type="previous" selectedUnit={props.selectedUnit} courseInfo={props.courseInfo}></ChangeUnitButton>
-      <ChangeUnitButton type="next" selectedUnit={props.selectedUnit} courseInfo={props.courseInfo}></ChangeUnitButton>
       <PaddingTop></PaddingTop>
-      <UnitOverviewHeadline text="Lesson Materials"></UnitOverviewHeadline>
+      {props.selectedUnit >= 1 ? (
+        <ChangeUnitButton
+          type="previous"
+          changeUnit={props.changeUnit}
+          selectedUnit={props.selectedUnit}
+          courseInfo={props.courseInfo}
+        ></ChangeUnitButton>
+      ) : (
+        <div></div>
+      )}
+      {props.selectedUnit <= 2 ? (
+        <ChangeUnitButton
+          type="next"
+          changeUnit={props.changeUnit}
+          selectedUnit={props.selectedUnit}
+          courseInfo={props.courseInfo}
+        ></ChangeUnitButton>
+      ) : (
+        <div></div>
+      )}
+      <PaddingTop></PaddingTop>
+      <PaddingTop></PaddingTop>
+      <UnitOverviewHeadline
+        text={`Unit ${unit} - Lesson Materials`}
+      ></UnitOverviewHeadline>
       <PPTFileList
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}

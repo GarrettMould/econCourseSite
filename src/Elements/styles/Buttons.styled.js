@@ -8,6 +8,6 @@ export const StyledSubmitButton = styled.button`
   font-size: 2.5vw;
   background-color: rgba(0, 0, 0, 0.7);
   color: var(--primaryWhite);
-  border: 4px solid black;
+  border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 `;

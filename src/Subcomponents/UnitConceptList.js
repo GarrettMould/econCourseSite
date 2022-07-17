@@ -11,19 +11,19 @@ const UnitConceptList = (props) => {
     var backgroundColor;
     var borderColor;
     if (concept.subtopic == 1) {
-      borderColor = "#FFC300";
+      borderColor = "rgba(255, 195, 0, 0.2)";
       backgroundColor = "rgba(255, 195, 0, 0.5)";
     } else if (concept.subtopic == 2) {
-      borderColor = "#03FF06";
+      borderColor = "rgba(3, 255, 6, 0.2)";
       backgroundColor = "rgba(3, 255, 6, 0.5)";
     } else if (concept.subtopic == 3) {
-      borderColor = "#FF03F3";
+      borderColor = "rgba(255, 3, 243, 0.2)";
       backgroundColor = "rgba(255, 3, 243, 0.5)";
     } else if (concept.subtopic == 4) {
-      borderColor = "#032AFF";
+      borderColor = "rgba(3, 42, 255, 0.2)";
       backgroundColor = "rgba(3, 42, 255, 0.5)";
     } else if (concept.subtopic == 0) {
-      borderColor = "#FF0303";
+      borderColor = "rgba(255, 3, 3, 0.2)";
       backgroundColor = "rgba(255, 3, 3, 0.5)";
     } else {
       borderColor = "#121212";

@@ -11,8 +11,16 @@ import { courseInformation } from "../CourseInformation";
 
 const App = (props) => {
   const [courseInfo, setCourseInfo] = useState(courseInformation);
-  const [selectedUnit, setSelectedUnit] = useState(0);
+  const [selectedUnit, setSelectedUnit] = useState(2);
   const [selectedUnitLessons, setSelectedUnitLessons] = useState(null);
+
+  const changeUnit = (e) => {
+    console.log(e.currentTarget);
+    e.preventDefault();
+    e.currentTarget.id == "previous"
+      ? setSelectedUnit(selectedUnit - 1)
+      : setSelectedUnit(selectedUnit + 1);
+  };
 
   return (
     <div>
@@ -21,6 +29,7 @@ const App = (props) => {
         <Header></Header>
         <AllUnitsPage courseInfo={courseInfo}></AllUnitsPage>
         <UnitOverviewPage
+          changeUnit={changeUnit}
           selectedUnit={selectedUnit}
           courseInfo={courseInfo}
         ></UnitOverviewPage>

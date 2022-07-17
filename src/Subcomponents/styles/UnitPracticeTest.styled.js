@@ -7,7 +7,7 @@ export const QuestionCard = styled.div.attrs((props) => ({
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.backgroundColor};
-  border: 4px solid ${(props) => props.borderColor};
+  border: 3px solid ${(props) => props.borderColor};
   border-radius: 15px;
 `;
 
@@ -30,6 +30,10 @@ export const OptionLabel = styled.label`
   font-family: var(--lessEmphasizedText);
   font-size: 1.5vw;
   padding-bottom: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const OptionButton = styled.input.attrs((props) => ({
@@ -44,7 +48,7 @@ export const OptionButton = styled.input.attrs((props) => ({
   width: 1.4em;
   border-radius: 100%;
   transition: all 0.2s ease-out;
-  border: 2px solid rgba(197, 197, 197, 0.7);
+  border: 1px solid rgba(197, 197, 197, 0.4);
   cursor: pointer;
   margin-right: 1rem;
   outline: none;
@@ -67,7 +71,7 @@ export const OptionButton = styled.input.attrs((props) => ({
   }
 
   &:checked {
-    border: 2px solid rgba(197, 197, 197, 1);
+    border: 1px solid rgba(197, 197, 197, 0.7);
   }
   &:checked:before {
     content: "";

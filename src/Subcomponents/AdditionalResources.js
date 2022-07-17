@@ -11,21 +11,27 @@ const AdditionalResources = (props) => {
   const mappedResources = resources.map((resource, i) => {
     var backgroundColor;
     var borderColor;
+    var textColor;
     if (resource.subtopic == 1) {
-      borderColor = "#FFC300";
+      borderColor = "rgba(255, 195, 0, 0.2)";
       backgroundColor = "rgba(255, 195, 0, 0.5)";
+      textColor = "rgba(255, 195, 0, 1)";
     } else if (resource.subtopic == 2) {
-      borderColor = "#03FF06";
+      borderColor = "rgba(3, 255, 6, 0.2)";
       backgroundColor = "rgba(3, 255, 6, 0.5)";
+      textColor = "rgba(3, 255, 6, 1)";
     } else if (resource.subtopic == 3) {
-      borderColor = "#FF03F3";
+      borderColor = "rgba(255, 3, 243, 0.2)";
       backgroundColor = "rgba(255, 3, 243, 0.5)";
+      textColor = "rgba(255, 3, 243, 1)";
     } else if (resource.subtopic == 4) {
-      borderColor = "#032AFF";
+      borderColor = "rgba(3, 42, 255, 0.2)";
       backgroundColor = "rgba(3, 42, 255, 0.5)";
+      textColor = "rgba(3, 42, 255, 1)";
     } else if (resource.subtopic == 0) {
-      borderColor = "#FF0303";
+      borderColor = "rgba(255, 3, 3, 0.2)";
       backgroundColor = "rgba(255, 3, 3, 0.5)";
+      textColor = "rgba(255, 3, 3, 1)";
     } else {
       borderColor = "#121212";
       backgroundColor = "rgba(18, 18, 18, 1)";
@@ -35,6 +41,7 @@ const AdditionalResources = (props) => {
         <ResourceCard
           backgroundColor={backgroundColor}
           borderColor={borderColor}
+          textColor={textColor}
         >
           <div>
             <a href={resource.link}>

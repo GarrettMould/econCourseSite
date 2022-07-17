@@ -6,7 +6,7 @@ export const ConceptBubble = styled.div.attrs((props) => ({
 }))`
   align-items: center;
   background-color: ${(props) => props.backgroundColor};
-  border: 3px solid ${(props) => props.borderColor};
+  border: 2px solid ${(props) => props.borderColor};
   border-radius: 15px;
   margin: 0.5rem 0.75rem 0.5rem 0;
 `;
