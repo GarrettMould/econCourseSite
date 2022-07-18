@@ -59,14 +59,14 @@ const UnitOverviewPage = (props) => {
       <PaddingTop></PaddingTop>
       <UnitOverviewHeadline text="Unit Practice Test"></UnitOverviewHeadline>
       <UnitPracticeTest
-        selectedUnit={props.selectedUnit}
-        courseInfo={props.courseInfo}
         tallyScore={props.tallyScore}
         resetTest={props.resetTest}
         unitTestLength={props.unitTestLength}
         unitTestScorePerc={props.unitTestScorePerc}
         unitTestScore={props.unitTestScore}
         testFinished={props.testFinished}
+        selectedUnit={props.selectedUnit}
+        courseInfo={props.courseInfo}
       ></UnitPracticeTest>
     </>
   );

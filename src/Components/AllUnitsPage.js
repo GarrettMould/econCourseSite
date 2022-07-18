@@ -16,7 +16,7 @@ const AllUnitsPage = (props) => {
   const mappedUnits = props.courseInfo.map((unit, i) => {
     return (
       <GridColumn size="3">
-        <UnitButton id={unit.unitNumber}>
+        <UnitButton id={unit.unitNumber} onClick={props.changeUnitMainPage}>
           <UnitCard
             backgroundColor={unit.unitBackgroundColor}
             borderColor={unit.unitBorderColor}

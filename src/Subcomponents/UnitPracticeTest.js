@@ -118,12 +118,12 @@ const UnitPracticeTest = (props) => {
           <>
             <PaddingTop></PaddingTop>
             <UnitTestResultsBox
-              selectedUnit={props.selectedUnit}
-              courseInfo={props.courseInfo}
               resetTest={props.resetTest}
               unitTestLength={props.unitTestLength}
               unitTestScorePerc={props.unitTestScorePerc}
               unitTestScore={props.unitTestScore}
+              selectedUnit={props.selectedUnit}
+              courseInfo={props.courseInfo}
             ></UnitTestResultsBox>
           </>
         ))
@@ -133,7 +133,10 @@ const UnitPracticeTest = (props) => {
               <GridRow>{mappedTestQuestions}</GridRow>
             </GridContainer>
             <PaddingTop></PaddingTop>
-            <SubmitButton tallyScore={props.tallyScore}></SubmitButton>
+            <SubmitButton
+              unitTestScore={props.unitTestScore}
+              tallyScore={props.tallyScore}
+            ></SubmitButton>
           </>
         ));
   }

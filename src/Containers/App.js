@@ -26,30 +26,46 @@ const App = (props) => {
       : setSelectedUnit(selectedUnit + 1);
   };
 
+  // Change unit from main page (will need to add react router)
+  const changeUnitMainPage = (e) => {
+    var id = e.currentTarget.id;
+    console.log(id);
+
+    if (id == "1") {
+      setSelectedUnit(0);
+    } else if (id == "2") {
+      setSelectedUnit(1);
+    } else if (id == "3") {
+      setSelectedUnit(2);
+    } else if (id == "4") {
+      setSelectedUnit(3);
+    } else {
+      setSelectedUnit(0);
+      alert("Error");
+    }
+  };
+
   // Function to calculate the total score on submission of test (loops through all of the checked radio buttons and determines whether the value is true or false)
 
   const tallyScore = () => {
     var questionsLength = courseInfo[selectedUnit].unitPracticeTest.length;
+    console.log(questionsLength);
     setUnitTestLength(questionsLength);
 
     // Add a feature that identifies the incorrect or unanswered questions
 
     var question = document.querySelectorAll(".option:checked");
 
-    console.log(question);
+    let localScore = unitTestScore;
 
     question.forEach((q) => {
-      console.log(q.value);
-      {
-        q.value == "true"
-          ? setUnitTestScore(unitTestScore + 1)
-          : setUnitTestScore(unitTestScore);
+      if (q.value == "true") {
+        localScore = localScore + 1;
       }
+
+      setUnitTestScore(localScore);
+      setTestFinished(true);
     });
-
-    console.log(unitTestScore);
-
-    setTestFinished(true);
   };
 
   const resetTest = () => {
@@ -64,10 +80,11 @@ const App = (props) => {
       <BannerTop text="This is NOT the official course website. Visit the Edmentum site for further information"></BannerTop>
       <ContainerPadded>
         <Header></Header>
-        <AllUnitsPage courseInfo={courseInfo}></AllUnitsPage>
-        <UnitOverviewPage
-          selectedUnit={selectedUnit}
+        <AllUnitsPage
+          changeUnitMainPage={changeUnitMainPage}
           courseInfo={courseInfo}
+        ></AllUnitsPage>
+        <UnitOverviewPage
           tallyScore={tallyScore}
           changeUnit={changeUnit}
           resetTest={resetTest}
@@ -75,6 +92,8 @@ const App = (props) => {
           unitTestScorePerc={unitTestScorePerc}
           unitTestScore={unitTestScore}
           testFinished={testFinished}
+          selectedUnit={selectedUnit}
+          courseInfo={courseInfo}
         ></UnitOverviewPage>
       </ContainerPadded>
     </div>

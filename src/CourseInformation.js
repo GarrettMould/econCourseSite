@@ -213,7 +213,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 4,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -229,7 +229,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 5,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -245,7 +245,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 6,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -261,7 +261,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 7,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -277,7 +277,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 8,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -293,7 +293,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 9,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -309,7 +309,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 10,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -539,7 +539,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 4,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -555,7 +555,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 5,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -571,7 +571,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 6,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -587,7 +587,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 7,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -603,7 +603,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 8,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -619,7 +619,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 9,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -635,7 +635,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 10,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -865,7 +865,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 4,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -881,7 +881,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 5,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -897,7 +897,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 6,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -913,7 +913,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 7,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -929,7 +929,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 8,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -945,7 +945,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 9,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -961,7 +961,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 10,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1191,7 +1191,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 4,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1207,7 +1207,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 5,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1223,7 +1223,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 6,
-        subtopic: 1,
+        subtopic: 2,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1239,7 +1239,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 7,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1255,7 +1255,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 8,
-        subtopic: 1,
+        subtopic: 3,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1271,7 +1271,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 9,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [
@@ -1287,7 +1287,7 @@ export var courseInformation = [
       },
       {
         questionNumber: 10,
-        subtopic: 1,
+        subtopic: 4,
         questionText:
           "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
         options: [

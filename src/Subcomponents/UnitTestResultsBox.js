@@ -35,6 +35,8 @@ const UnitTestResultsBox = (props) => {
     textColor = "white";
   }
 
+  console.log(props.unitTestScore);
+
   return (
     <GridContainer width="100%">
       <GridRow>
