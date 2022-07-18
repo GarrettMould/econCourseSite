@@ -6,6 +6,7 @@ import AdditionalResources from "../Subcomponents/AdditionalResources";
 import PPTFileList from "../Subcomponents/PPTFileList";
 import UnitConceptList from "../Subcomponents/UnitConceptList";
 import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
+import UnitTestResultsBox from "../Subcomponents/UnitTestResultsBox";
 import { PaddingTop } from "./styles/Containers.styled";
 
 const UnitOverviewPage = (props) => {
@@ -60,9 +61,13 @@ const UnitOverviewPage = (props) => {
       <UnitPracticeTest
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
+        tallyScore={props.tallyScore}
+        resetTest={props.resetTest}
+        unitTestLength={props.unitTestLength}
+        unitTestScorePerc={props.unitTestScorePerc}
+        unitTestScore={props.unitTestScore}
+        testFinished={props.testFinished}
       ></UnitPracticeTest>
-      <PaddingTop></PaddingTop>
-      <SubmitButton></SubmitButton>
     </>
   );
 };

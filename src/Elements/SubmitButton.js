@@ -3,7 +3,7 @@ import { FlexRow } from "../Components/styles/FlexContainers.styled";
 const SubmitButton = (props) => {
   return (
     <FlexRow justifyContent="center">
-      <StyledSubmitButton>Submit</StyledSubmitButton>
+      <StyledSubmitButton onClick={props.tallyScore}>Submit</StyledSubmitButton>
     </FlexRow>
   );
 };

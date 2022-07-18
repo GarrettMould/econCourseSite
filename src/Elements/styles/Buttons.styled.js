@@ -11,3 +11,21 @@ export const StyledSubmitButton = styled.button`
   border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 `;
+
+export const UnitButton = styled.button`
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+`;
+
+export const CloseResultsButton = styled.button`
+  font-family: var(--emphasizedText);
+  width: 100%;
+  padding: 0.5rem 0rem 0.25rem 0rem;
+  font-size: 1.5vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--primaryWhite);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+`;

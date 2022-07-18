@@ -8,18 +8,25 @@ import {
   UnitInfoContainer,
 } from "./styles/AllUnitsPage.styled";
 
+import { UnitButton } from "../Elements/styles/Buttons.styled";
+
 import { PaddingTop } from "./styles/Containers.styled";
 
 const AllUnitsPage = (props) => {
   const mappedUnits = props.courseInfo.map((unit, i) => {
     return (
       <GridColumn size="3">
-        <UnitCard backgroundColor={unit.unitBackgroundColor} borderColor={unit.unitBorderColor}>
-          <UnitInfoContainer>
-            <UnitNumber>{unit.unitNumber}</UnitNumber>
-            <UnitName>{unit.unitName}</UnitName>
-          </UnitInfoContainer>
-        </UnitCard>
+        <UnitButton id={unit.unitNumber}>
+          <UnitCard
+            backgroundColor={unit.unitBackgroundColor}
+            borderColor={unit.unitBorderColor}
+          >
+            <UnitInfoContainer>
+              <UnitNumber>{unit.unitNumber}</UnitNumber>
+              <UnitName>{unit.unitName}</UnitName>
+            </UnitInfoContainer>
+          </UnitCard>
+        </UnitButton>
       </GridColumn>
     );
   });

@@ -9,11 +9,16 @@ import {
 import {
   QuestionCard,
   QuestionText,
-  AnswerOption,
   QuestionAnswerContainer,
   OptionButton,
   OptionLabel,
 } from "./styles/UnitPracticeTest.styled";
+
+import { PaddingTop } from "../Components/styles/Containers.styled";
+
+import SubmitButton from "../Elements/SubmitButton";
+
+import UnitTestResultsBox from "./UnitTestResultsBox";
 
 const UnitPracticeTest = (props) => {
   let testQuestions = props.courseInfo[props.selectedUnit].unitPracticeTest;
@@ -55,9 +60,10 @@ const UnitPracticeTest = (props) => {
                 <OptionButton
                   backgroundColor={backgroundColor}
                   borderColor={borderColor}
+                  className="option"
                   type="radio"
                   name={question.questionNumber}
-                  value={question.options[0].id}
+                  value={question.options[0].isCorrect}
                 ></OptionButton>
                 {question.options[0].name}
               </OptionLabel>
@@ -66,9 +72,10 @@ const UnitPracticeTest = (props) => {
                 <OptionButton
                   backgroundColor={backgroundColor}
                   borderColor={borderColor}
+                  className="option"
                   type="radio"
                   name={question.questionNumber}
-                  value={question.options[1].id}
+                  value={question.options[1].isCorrect}
                 ></OptionButton>
                 {question.options[1].name}
               </OptionLabel>
@@ -77,9 +84,10 @@ const UnitPracticeTest = (props) => {
                 <OptionButton
                   backgroundColor={backgroundColor}
                   borderColor={borderColor}
+                  className="option"
                   type="radio"
                   name={question.questionNumber}
-                  value={question.options[2].id}
+                  value={question.options[2].isCorrect}
                 ></OptionButton>
                 {question.options[2].name}
               </OptionLabel>
@@ -88,9 +96,10 @@ const UnitPracticeTest = (props) => {
                 <OptionButton
                   backgroundColor={backgroundColor}
                   borderColor={borderColor}
+                  className="option"
                   type="radio"
                   name={question.questionNumber}
-                  value={question.options[3].id}
+                  value={question.options[3].isCorrect}
                 ></OptionButton>
                 {question.options[3].name}
               </OptionLabel>
@@ -100,11 +109,35 @@ const UnitPracticeTest = (props) => {
       </GridColumn>
     );
   });
-  return (
-    <GridContainer width="100%">
-      <GridRow>{mappedTestQuestions}</GridRow>
-    </GridContainer>
-  );
+
+  var display;
+
+  {
+    props.testFinished == true
+      ? (display = (
+          <>
+            <PaddingTop></PaddingTop>
+            <UnitTestResultsBox
+              selectedUnit={props.selectedUnit}
+              courseInfo={props.courseInfo}
+              resetTest={props.resetTest}
+              unitTestLength={props.unitTestLength}
+              unitTestScorePerc={props.unitTestScorePerc}
+              unitTestScore={props.unitTestScore}
+            ></UnitTestResultsBox>
+          </>
+        ))
+      : (display = (
+          <>
+            <GridContainer width="100%">
+              <GridRow>{mappedTestQuestions}</GridRow>
+            </GridContainer>
+            <PaddingTop></PaddingTop>
+            <SubmitButton tallyScore={props.tallyScore}></SubmitButton>
+          </>
+        ));
+  }
+  return display;
 };
 
 export default UnitPracticeTest;

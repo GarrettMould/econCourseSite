@@ -9,10 +9,10 @@ export const UnitCard = styled.div.attrs((props) => ({
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 400px;
   background-color: ${(props) => props.backgroundColor};
   border: 4px solid ${(props) => props.borderColor};
-  border-radius: 15px; 
+  border-radius: 15px;
 `;
 
 export const UnitInfoContainer = styled.div`

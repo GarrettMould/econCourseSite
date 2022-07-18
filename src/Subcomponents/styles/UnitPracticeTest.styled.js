@@ -76,8 +76,8 @@ export const OptionButton = styled.input.attrs((props) => ({
   &:checked:before {
     content: "";
     position: absolute;
-    width: 75%;
-    height: 75%;
+    width: 60%;
+    height: 60%;
     margin: auto;
     top: 50%;
     left: 0;
