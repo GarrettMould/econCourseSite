@@ -6,12 +6,12 @@ import AdditionalResources from "../Subcomponents/AdditionalResources";
 import PPTFileList from "../Subcomponents/PPTFileList";
 import UnitConceptList from "../Subcomponents/UnitConceptList";
 import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
-import UnitTestResultsBox from "../Subcomponents/UnitTestResultsBox";
+
 import { PaddingTop } from "./styles/Containers.styled";
 
 const UnitOverviewPage = (props) => {
   var unit = props.courseInfo[props.selectedUnit].unitNumber;
-  console.log(unit);
+
   return (
     <>
       <PaddingTop></PaddingTop>
@@ -57,10 +57,11 @@ const UnitOverviewPage = (props) => {
         courseInfo={props.courseInfo}
       ></AdditionalResources>
       <PaddingTop></PaddingTop>
-      <UnitOverviewHeadline text="Unit Practice Test"></UnitOverviewHeadline>
+
       <UnitPracticeTest
         tallyScore={props.tallyScore}
         resetTest={props.resetTest}
+        unansweredQuestions={props.unansweredQuestions}
         unitTestLength={props.unitTestLength}
         unitTestScorePerc={props.unitTestScorePerc}
         unitTestScore={props.unitTestScore}

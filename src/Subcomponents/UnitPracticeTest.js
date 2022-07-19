@@ -12,7 +12,10 @@ import {
   QuestionAnswerContainer,
   OptionButton,
   OptionLabel,
+  Message,
 } from "./styles/UnitPracticeTest.styled";
+
+import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
 
 import { PaddingTop } from "../Components/styles/Containers.styled";
 
@@ -50,6 +53,7 @@ const UnitPracticeTest = (props) => {
         <QuestionCard
           backgroundColor={backgroundColor}
           borderColor={borderColor}
+          className="questionCard"
         >
           <QuestionAnswerContainer>
             <QuestionText>
@@ -129,6 +133,14 @@ const UnitPracticeTest = (props) => {
         ))
       : (display = (
           <>
+            <UnitOverviewHeadline text="Unit Practice Test"></UnitOverviewHeadline>
+            {!props.unansweredQuestions ? (
+              <div></div>
+            ) : (
+              <Message>
+                Reminder: <span>Answer all questions before submitting</span>
+              </Message>
+            )}
             <GridContainer width="100%">
               <GridRow>{mappedTestQuestions}</GridRow>
             </GridContainer>

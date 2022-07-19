@@ -89,3 +89,15 @@ export const OptionButton = styled.input.attrs((props) => ({
     transition: opacity 1s ease;
   }
 `;
+
+export const Message = styled.div`
+  padding: 0.5rem 0rem 1.5rem 0rem;
+  font-family: var(--lessEmphasizedText);
+  color: red;
+  font-size: 2vw;
+
+  span {
+    font-family: "CalibreRegular";
+    color: red;
+  }
+`;

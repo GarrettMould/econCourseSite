@@ -16,6 +16,7 @@ const App = (props) => {
   const [unitTestScore, setUnitTestScore] = useState(0);
   const [unitTestScorePerc, setUnitTestScorePerc] = useState(0);
   const [testFinished, setTestFinished] = useState(false);
+  const [unansweredQuestions, setUnansweredQuestions] = useState(false);
 
   // Function to change the selected unit
   const changeUnit = (e) => {
@@ -45,34 +46,75 @@ const App = (props) => {
     }
   };
 
+  // Function to determine which questions are unanswered and add a red border to them
+  const selectUnanswered = () => {
+    var checkbox = document.querySelector(".option:checked");
+
+    console.log(checkbox);
+
+    var questionCard = document.querySelectorAll(".questionCard");
+
+    console.log(questionCard);
+
+    questionCard.forEach((q) => {
+      console.log(q.children);
+      if (q.hasChildNodes(checkbox)) {
+        q.classList.add("redBorder");
+      } else {
+        console.log("blah");
+      }
+    });
+  };
+
+  selectUnanswered();
+
   // Function to calculate the total score on submission of test (loops through all of the checked radio buttons and determines whether the value is true or false)
 
   const tallyScore = () => {
     var questionsLength = courseInfo[selectedUnit].unitPracticeTest.length;
-    console.log(questionsLength);
+
     setUnitTestLength(questionsLength);
 
     // Add a feature that identifies the incorrect or unanswered questions
 
     var question = document.querySelectorAll(".option:checked");
 
+    var unanswered = document.querySelectorAll(
+      "input[type=radio]:not(:checked)"
+    );
+
+    console.log(question);
+
+    console.log(unanswered);
+
     let localScore = unitTestScore;
 
-    question.forEach((q) => {
-      if (q.value == "true") {
-        localScore = localScore + 1;
-      }
+    if (question.length == questionsLength) {
+      question.forEach((q) => {
+        if (q.value == "true") {
+          localScore = localScore + 1;
+        }
 
-      setUnitTestScore(localScore);
-      setTestFinished(true);
-    });
+        setUnitTestScore(localScore);
+        setTestFinished(true);
+      });
+    } else {
+      setUnansweredQuestions(true);
+    }
   };
 
+  // Function to reset test score and all related variables
+
   const resetTest = () => {
+    setUnansweredQuestions(false);
     setTestFinished(false);
     setUnitTestScore(0);
     setUnitTestLength(0);
     setUnitTestScorePerc(0);
+
+    var questionCard = document.querySelectorAll(".questionCard");
+
+    questionCard.classList.remove("redBorder");
   };
 
   return (
@@ -88,6 +130,7 @@ const App = (props) => {
           tallyScore={tallyScore}
           changeUnit={changeUnit}
           resetTest={resetTest}
+          unansweredQuestions={unansweredQuestions}
           unitTestLength={unitTestLength}
           unitTestScorePerc={unitTestScorePerc}
           unitTestScore={unitTestScore}
