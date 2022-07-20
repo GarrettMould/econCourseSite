@@ -91,10 +91,11 @@ export const OptionButton = styled.input.attrs((props) => ({
 `;
 
 export const Message = styled.div`
-  padding: 0.5rem 0rem 1.5rem 0rem;
+  visibility: ${(props) => props.visibility};
+  padding: ${(props) => props.padding};
   font-family: var(--lessEmphasizedText);
   color: red;
-  font-size: 2vw;
+  font-size: ${(props) => props.fontSize};
 
   span {
     font-family: "CalibreRegular";

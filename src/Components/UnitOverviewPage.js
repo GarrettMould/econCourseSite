@@ -9,7 +9,7 @@ import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
 
 import { PaddingTop } from "./styles/Containers.styled";
 
-const UnitOverviewPage = (props) => {
+const UnitOverviewPage = ({ forwardedRef, ...props }) => {
   var unit = props.courseInfo[props.selectedUnit].unitNumber;
 
   return (
@@ -59,6 +59,7 @@ const UnitOverviewPage = (props) => {
       <PaddingTop></PaddingTop>
 
       <UnitPracticeTest
+        forwardedRef={forwardedRef}
         tallyScore={props.tallyScore}
         resetTest={props.resetTest}
         unansweredQuestions={props.unansweredQuestions}

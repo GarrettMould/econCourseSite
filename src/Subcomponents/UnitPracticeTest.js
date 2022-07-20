@@ -23,7 +23,7 @@ import SubmitButton from "../Elements/SubmitButton";
 
 import UnitTestResultsBox from "./UnitTestResultsBox";
 
-const UnitPracticeTest = (props) => {
+const UnitPracticeTest = ({ forwardedRef, ...props }) => {
   let testQuestions = props.courseInfo[props.selectedUnit].unitPracticeTest;
 
   const mappedTestQuestions = testQuestions.map((question, i) => {
@@ -54,6 +54,7 @@ const UnitPracticeTest = (props) => {
           backgroundColor={backgroundColor}
           borderColor={borderColor}
           className="questionCard"
+          key={question.questionNumber}
         >
           <QuestionAnswerContainer>
             <QuestionText>
@@ -134,13 +135,20 @@ const UnitPracticeTest = (props) => {
       : (display = (
           <>
             <UnitOverviewHeadline text="Unit Practice Test"></UnitOverviewHeadline>
-            {!props.unansweredQuestions ? (
-              <div></div>
-            ) : (
-              <Message>
-                Reminder: <span>Answer all questions before submitting</span>
-              </Message>
-            )}
+            <Message
+              ref={forwardedRef}
+              visibility={
+                props.unansweredQuestions == true ? "visible" : "hidden"
+              }
+              padding={
+                props.unansweredQuestions == true
+                  ? "0.5rem 0rem 1.5rem 0rem"
+                  : "0rem"
+              }
+              fontSize={props.unansweredQuestions == true ? "2vw" : "0vw"}
+            >
+              Reminder: <span>Answer all questions before submitting</span>
+            </Message>
             <GridContainer width="100%">
               <GridRow>{mappedTestQuestions}</GridRow>
             </GridContainer>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { ContainerPadded } from "../Components/styles/Containers.styled";
@@ -17,6 +17,12 @@ const App = (props) => {
   const [unitTestScorePerc, setUnitTestScorePerc] = useState(0);
   const [testFinished, setTestFinished] = useState(false);
   const [unansweredQuestions, setUnansweredQuestions] = useState(false);
+
+  const forwardedRef = useRef();
+
+  useEffect(() => {
+    console.log(forwardedRef.current);
+  });
 
   // Function to change the selected unit
   const changeUnit = (e) => {
@@ -57,7 +63,7 @@ const App = (props) => {
     console.log(questionCard);
 
     questionCard.forEach((q) => {
-      console.log(q.children);
+      console.log(q.childNodes);
       if (q.hasChildNodes(checkbox)) {
         q.classList.add("redBorder");
       } else {
@@ -65,8 +71,6 @@ const App = (props) => {
       }
     });
   };
-
-  selectUnanswered();
 
   // Function to calculate the total score on submission of test (loops through all of the checked radio buttons and determines whether the value is true or false)
 
@@ -100,6 +104,8 @@ const App = (props) => {
       });
     } else {
       setUnansweredQuestions(true);
+      // selectUnanswered();
+      forwardedRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -127,6 +133,7 @@ const App = (props) => {
           courseInfo={courseInfo}
         ></AllUnitsPage>
         <UnitOverviewPage
+          forwardedRef={forwardedRef}
           tallyScore={tallyScore}
           changeUnit={changeUnit}
           resetTest={resetTest}
