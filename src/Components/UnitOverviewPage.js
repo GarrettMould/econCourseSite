@@ -63,6 +63,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
         tallyScore={props.tallyScore}
         resetTest={props.resetTest}
         unansweredQuestions={props.unansweredQuestions}
+        incorrectQuestionsList={props.incorrectQuestionsList}
         unitTestLength={props.unitTestLength}
         unitTestScorePerc={props.unitTestScorePerc}
         unitTestScore={props.unitTestScore}

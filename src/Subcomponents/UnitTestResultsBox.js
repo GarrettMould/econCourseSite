@@ -10,6 +10,9 @@ import { ResultsBox } from "./styles/UnitTestResultsBox.styled";
 const UnitTestResultsBox = (props) => {
   let unit = props.courseInfo[props.selectedUnit].unitNumber;
 
+  var missedQuestions = props.unansweredQuestionsList;
+  console.log(missedQuestions);
+
   var backgroundColor;
   var borderColor;
   var textColor;
@@ -55,7 +58,7 @@ const UnitTestResultsBox = (props) => {
                 <span>Missed Questions:</span>
               </h3>
               <h3>
-                <span>Q1, Q3, Q7</span>
+                <span>{missedQuestions}</span>
               </h3>
               <CloseResultsButton onClick={props.resetTest}>
                 Close

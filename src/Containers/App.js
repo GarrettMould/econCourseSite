@@ -17,6 +17,7 @@ const App = (props) => {
   const [unitTestScorePerc, setUnitTestScorePerc] = useState(0);
   const [testFinished, setTestFinished] = useState(false);
   const [unansweredQuestions, setUnansweredQuestions] = useState(false);
+  const [incorrectQuestionsList, setIncorrectQuestionsList] = useState([]);
 
   const forwardedRef = useRef();
 
@@ -52,26 +53,24 @@ const App = (props) => {
     }
   };
 
-  // Function to determine which questions are unanswered and add a red border to them
-  const selectUnanswered = () => {
-    var checkbox = document.querySelector(".option:checked");
+  const highlightUnanswered = () => {
+    const questions = document.querySelectorAll(".questionCard");
 
-    console.log(checkbox);
+    console.log(questions);
 
-    var questionCard = document.querySelectorAll(".questionCard");
+    questions.forEach((q) => {
+      var inputElements = q.querySelectorAll("input:checked");
+      console.log(inputElements);
 
-    console.log(questionCard);
-
-    questionCard.forEach((q) => {
-      console.log(q.childNodes);
-      if (q.hasChildNodes(checkbox)) {
-        q.classList.add("redBorder");
+      if (inputElements.length == 0) {
+        const blah = q.closest(".questionCard");
+        blah.classList.add("redBorder");
       } else {
-        console.log("blah");
+        const blah = q.closest(".questionCard");
+        blah.classList.remove("redBorder");
       }
     });
   };
-
   // Function to calculate the total score on submission of test (loops through all of the checked radio buttons and determines whether the value is true or false)
 
   const tallyScore = () => {
@@ -87,24 +86,29 @@ const App = (props) => {
       "input[type=radio]:not(:checked)"
     );
 
-    console.log(question);
-
-    console.log(unanswered);
-
     let localScore = unitTestScore;
 
+    var incorrectQuestions = [];
+
+    // Run this if all questions have been answered
     if (question.length == questionsLength) {
       question.forEach((q) => {
         if (q.value == "true") {
           localScore = localScore + 1;
+        } else {
+          const incorrectQuestion = q.closest(".questionCard").id;
+          incorrectQuestions.push(incorrectQuestion);
         }
-
         setUnitTestScore(localScore);
         setTestFinished(true);
       });
+
+      setIncorrectQuestionsList(incorrectQuestions);
+      // Run this if there are unanswered questions
     } else {
       setUnansweredQuestions(true);
-      // selectUnanswered();
+      highlightUnanswered();
+
       forwardedRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -138,6 +142,7 @@ const App = (props) => {
           changeUnit={changeUnit}
           resetTest={resetTest}
           unansweredQuestions={unansweredQuestions}
+          incorrectQuestionsList={incorrectQuestionsList}
           unitTestLength={unitTestLength}
           unitTestScorePerc={unitTestScorePerc}
           unitTestScore={unitTestScore}

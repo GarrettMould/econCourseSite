@@ -1,3 +1,7 @@
+import Form from "react-bootstrap/Form";
+
+import { InputGroup } from "react-bootstrap";
+
 import { FlexColumn } from "../Components/styles/FlexContainers.styled";
 
 import {
@@ -50,67 +54,73 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
     }
     return (
       <GridColumn size="12">
-        <QuestionCard
-          backgroundColor={backgroundColor}
-          borderColor={borderColor}
-          className="questionCard"
-          key={question.questionNumber}
-        >
-          <QuestionAnswerContainer>
-            <QuestionText>
-              {question.questionNumber})&nbsp;{question.questionText}
-            </QuestionText>
-            <FlexColumn>
-              <OptionLabel>
-                <OptionButton
-                  backgroundColor={backgroundColor}
-                  borderColor={borderColor}
-                  className="option"
-                  type="radio"
-                  name={question.questionNumber}
-                  value={question.options[0].isCorrect}
-                ></OptionButton>
-                {question.options[0].name}
-              </OptionLabel>
+        <Form.Group>
+          <QuestionCard
+            backgroundColor={backgroundColor}
+            borderColor={borderColor}
+            className="questionCard"
+            key={question.questionNumber}
+            id={question.questionNumber}
+          >
+            <QuestionAnswerContainer>
+              <QuestionText>
+                {question.questionNumber})&nbsp;{question.questionText}
+              </QuestionText>
 
-              <OptionLabel>
-                <OptionButton
-                  backgroundColor={backgroundColor}
-                  borderColor={borderColor}
-                  className="option"
-                  type="radio"
-                  name={question.questionNumber}
-                  value={question.options[1].isCorrect}
-                ></OptionButton>
-                {question.options[1].name}
-              </OptionLabel>
+              <InputGroup>
+                <FlexColumn>
+                  <OptionLabel>
+                    <OptionButton
+                      backgroundColor={backgroundColor}
+                      borderColor={borderColor}
+                      className="option"
+                      type="radio"
+                      name={question.questionNumber}
+                      value={question.options[0].isCorrect}
+                    ></OptionButton>
+                    {question.options[0].name}
+                  </OptionLabel>
 
-              <OptionLabel>
-                <OptionButton
-                  backgroundColor={backgroundColor}
-                  borderColor={borderColor}
-                  className="option"
-                  type="radio"
-                  name={question.questionNumber}
-                  value={question.options[2].isCorrect}
-                ></OptionButton>
-                {question.options[2].name}
-              </OptionLabel>
+                  <OptionLabel>
+                    <OptionButton
+                      backgroundColor={backgroundColor}
+                      borderColor={borderColor}
+                      className="option"
+                      type="radio"
+                      name={question.questionNumber}
+                      value={question.options[1].isCorrect}
+                    ></OptionButton>
+                    {question.options[1].name}
+                  </OptionLabel>
 
-              <OptionLabel>
-                <OptionButton
-                  backgroundColor={backgroundColor}
-                  borderColor={borderColor}
-                  className="option"
-                  type="radio"
-                  name={question.questionNumber}
-                  value={question.options[3].isCorrect}
-                ></OptionButton>
-                {question.options[3].name}
-              </OptionLabel>
-            </FlexColumn>
-          </QuestionAnswerContainer>
-        </QuestionCard>
+                  <OptionLabel>
+                    <OptionButton
+                      backgroundColor={backgroundColor}
+                      borderColor={borderColor}
+                      className="option"
+                      type="radio"
+                      name={question.questionNumber}
+                      value={question.options[2].isCorrect}
+                    ></OptionButton>
+                    {question.options[2].name}
+                  </OptionLabel>
+
+                  <OptionLabel>
+                    <OptionButton
+                      backgroundColor={backgroundColor}
+                      borderColor={borderColor}
+                      className="option"
+                      type="radio"
+                      name={question.questionNumber}
+                      value={question.options[3].isCorrect}
+                    ></OptionButton>
+                    {question.options[3].name}
+                  </OptionLabel>
+                </FlexColumn>
+              </InputGroup>
+            </QuestionAnswerContainer>
+          </QuestionCard>
+        </Form.Group>
       </GridColumn>
     );
   });
@@ -127,6 +137,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
               unitTestLength={props.unitTestLength}
               unitTestScorePerc={props.unitTestScorePerc}
               unitTestScore={props.unitTestScore}
+              incorrectQuestionsList={props.incorrectQuestionsList}
               selectedUnit={props.selectedUnit}
               courseInfo={props.courseInfo}
             ></UnitTestResultsBox>
@@ -150,7 +161,9 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
               Reminder: <span>Answer all questions before submitting</span>
             </Message>
             <GridContainer width="100%">
-              <GridRow>{mappedTestQuestions}</GridRow>
+              <Form>
+                <GridRow>{mappedTestQuestions}</GridRow>
+              </Form>
             </GridContainer>
             <PaddingTop></PaddingTop>
             <SubmitButton
