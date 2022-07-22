@@ -1,3 +1,4 @@
+import { propTypes } from "react-bootstrap/esm/Image";
 import {
   GridColumn,
   GridContainer,
@@ -10,8 +11,20 @@ import { ResultsBox } from "./styles/UnitTestResultsBox.styled";
 const UnitTestResultsBox = (props) => {
   let unit = props.courseInfo[props.selectedUnit].unitNumber;
 
-  var missedQuestions = props.unansweredQuestionsList;
-  console.log(missedQuestions);
+  // Take the list of incorrect questions provided through props and format them to be display in the test results box
+
+  var incorrectQuestions = props.incorrectQuestionsList;
+
+  var incorrectQuestionsFinal = [];
+
+  if (incorrectQuestions) {
+    incorrectQuestions.forEach((q) => {
+      var formatted = "Q" + q;
+      incorrectQuestionsFinal.push(formatted);
+    });
+  }
+
+  var displayIncorrectQuestions = incorrectQuestionsFinal.join(", ");
 
   var backgroundColor;
   var borderColor;
@@ -39,35 +52,31 @@ const UnitTestResultsBox = (props) => {
   }
 
   return (
-    <GridContainer width="100%">
-      <GridRow>
-        <GridColumn size="6">
-          <ResultsBox
-            backgroundColor={backgroundColor}
-            borderColor={borderColor}
-            textColor={textColor}
-          >
-            <div>
-              <h2>Final Results</h2>
-              <h3>
-                {props.unitTestScore} out of {props.unitTestLength} correct -
-                (&nbsp;
-                {(props.unitTestScore / props.unitTestLength) * 100}%&nbsp;)
-              </h3>
-              <h3>
-                <span>Missed Questions:</span>
-              </h3>
-              <h3>
-                <span>{missedQuestions}</span>
-              </h3>
-              <CloseResultsButton onClick={props.resetTest}>
-                Close
-              </CloseResultsButton>
-            </div>
-          </ResultsBox>
-        </GridColumn>
-      </GridRow>
-    </GridContainer>
+    <FlexRow width="100%" justifyContent="center" alignItems="center">
+      <ResultsBox
+        backgroundColor={backgroundColor}
+        borderColor={borderColor}
+        textColor={textColor}
+      >
+        <div>
+          <h2>Final Results</h2>
+          <h3>
+            {props.unitTestScore} out of {props.unitTestLength} correct &nbsp; -
+            &nbsp;
+            {(props.unitTestScore / props.unitTestLength) * 100}%&nbsp;
+          </h3>
+          <h4>
+            <span>Missed Questions:</span>
+          </h4>
+          <h4>
+            <span>{displayIncorrectQuestions}</span>
+          </h4>
+          <CloseResultsButton onClick={props.resetTest}>
+            Close
+          </CloseResultsButton>
+        </div>
+      </ResultsBox>
+    </FlexRow>
   );
 };
 

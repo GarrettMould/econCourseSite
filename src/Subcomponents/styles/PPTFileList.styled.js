@@ -5,9 +5,12 @@ export const PPTList = styled.ul`
   flex-direction: column;
   list-style: none;
   padding-left: 0;
- margin-bottom: 0;
+  margin-bottom: 0;
 
-`
+  @media only screen and (max-width: 599px) {
+    width: 90%;
+  }
+`;
 export const ListItem = styled.li.attrs((props) => ({
   color: props.color,
 }))`
@@ -20,5 +23,10 @@ export const ListItem = styled.li.attrs((props) => ({
 
   a:hover {
     text-decoration: none;
+  }
+
+  @media only screen and (max-width: 599px) {
+    font-size: 4.5vw;
+    padding-bottom: 2rem;
   }
 `;

@@ -37,7 +37,7 @@ const AdditionalResources = (props) => {
       backgroundColor = "rgba(18, 18, 18, 1)";
     }
     return (
-      <GridColumn size="3">
+      <GridColumn size={props.isMobile ? "6" : "3"}>
         <ResourceCard
           backgroundColor={backgroundColor}
           borderColor={borderColor}
@@ -55,7 +55,7 @@ const AdditionalResources = (props) => {
     );
   });
   return (
-    <GridContainer width="100%">
+    <GridContainer width={props.isMobile ? "90%" : "100%"}>
       <GridRow>{mappedResources}</GridRow>
     </GridContainer>
   );

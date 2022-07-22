@@ -40,7 +40,11 @@ const UnitConceptList = (props) => {
     );
   });
   return (
-    <FlexRow alignItems="center" width="85%" flexWrap="wrap">
+    <FlexRow
+      alignItems="center"
+      width={props.isMobile ? "100%" : "85%"}
+      flexWrap="wrap"
+    >
       {mappedUnitConcepts}
     </FlexRow>
   );

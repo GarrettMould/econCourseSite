@@ -13,6 +13,10 @@ export const QuestionCard = styled.div.attrs((props) => ({
 
 export const QuestionAnswerContainer = styled.div`
   padding: 1.5rem;
+
+  @media only screen and (max-width: 599px) {
+    padding: 1.25rem 1rem 1rem 1.25rem;
+  }
 `;
 
 export const QuestionText = styled.div`
@@ -20,6 +24,10 @@ export const QuestionText = styled.div`
   color: var(--primaryWhite);
   font-size: 2vw;
   padding-bottom: 1.5rem;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 3.5vw;
+  }
 `;
 
 export const OptionLabel = styled.label`
@@ -33,6 +41,10 @@ export const OptionLabel = styled.label`
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 599px) {
+    font-size: 3vw;
   }
 `;
 
@@ -86,7 +98,12 @@ export const OptionButton = styled.input.attrs((props) => ({
     background: ${(props) => props.backgroundColor};
     opacity: 100%;
     border-radius: 100%;
-    transition: opacity 1s ease;
+    transition: opacity 0.3s ease;
+
+    @media only screen and (max-width: 599px) {
+      width: 80%;
+      height: 80%;
+    }
   }
 `;
 
@@ -100,5 +117,9 @@ export const Message = styled.div`
   span {
     font-family: "CalibreRegular";
     color: red;
+  }
+
+  @media only screen and (max-width: 599px) {
+    font-size: ${(props) => props.fontSizeMobile};
   }
 `;

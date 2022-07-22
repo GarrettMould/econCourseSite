@@ -8,6 +8,7 @@ import AllUnitsPage from "../Components/AllUnitsPage";
 import UnitOverviewPage from "../Components/UnitOverviewPage";
 
 import { courseInformation } from "../CourseInformation";
+import AllUnitsPageMobile from "../Components/AllUnitsPageMobile";
 
 const App = (props) => {
   const [courseInfo, setCourseInfo] = useState(courseInformation);
@@ -18,8 +19,29 @@ const App = (props) => {
   const [testFinished, setTestFinished] = useState(false);
   const [unansweredQuestions, setUnansweredQuestions] = useState(false);
   const [incorrectQuestionsList, setIncorrectQuestionsList] = useState([]);
+  const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
 
   const forwardedRef = useRef();
+
+  // Event listener that runs when the window is resized and sets the deviceWidth to the current width
+
+  useEffect(() => {
+    handleWindowSizeChange();
+  });
+
+  const handleWindowSizeChange = () => {
+    setDeviceWidth(window.innerWidth);
+  };
+
+  window.addEventListener("resize", handleWindowSizeChange);
+
+  console.log(deviceWidth);
+
+  // Variable that returns true if device width is less than 500 (use this for mobile styling)
+
+  const isMobile = deviceWidth <= 500;
+
+  console.log(isMobile);
 
   useEffect(() => {
     console.log(forwardedRef.current);
@@ -53,6 +75,7 @@ const App = (props) => {
     }
   };
 
+  // Function to determine uncompleted questions on submission and highlight those questions
   const highlightUnanswered = () => {
     const questions = document.querySelectorAll(".questionCard");
 
@@ -71,6 +94,7 @@ const App = (props) => {
       }
     });
   };
+
   // Function to calculate the total score on submission of test (loops through all of the checked radio buttons and determines whether the value is true or false)
 
   const tallyScore = () => {
@@ -78,37 +102,35 @@ const App = (props) => {
 
     setUnitTestLength(questionsLength);
 
-    // Add a feature that identifies the incorrect or unanswered questions
-
     var question = document.querySelectorAll(".option:checked");
-
-    var unanswered = document.querySelectorAll(
-      "input[type=radio]:not(:checked)"
-    );
 
     let localScore = unitTestScore;
 
     var incorrectQuestions = [];
 
-    // Run this if all questions have been answered
+    // Runs if all questions have been answered
     if (question.length == questionsLength) {
       question.forEach((q) => {
         if (q.value == "true") {
           localScore = localScore + 1;
         } else {
-          const incorrectQuestion = q.closest(".questionCard").id;
-          incorrectQuestions.push(incorrectQuestion);
+          //If the answer is incorrect, add that question to the list of incorrect questions
+          const incorrectQuestion = q.closest(".questionCard");
+          const incorrectQuestionID = q.closest(".questionCard").id;
+          incorrectQuestions.push(incorrectQuestionID);
+          incorrectQuestion.classList.add("red");
         }
+        //Set the final score and set the test to finished (which causes resultsBox to be displayed)
         setUnitTestScore(localScore);
         setTestFinished(true);
       });
 
       setIncorrectQuestionsList(incorrectQuestions);
+
       // Run this if there are unanswered questions
     } else {
       setUnansweredQuestions(true);
       highlightUnanswered();
-
       forwardedRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -117,6 +139,7 @@ const App = (props) => {
 
   const resetTest = () => {
     setUnansweredQuestions(false);
+    setIncorrectQuestionsList([]);
     setTestFinished(false);
     setUnitTestScore(0);
     setUnitTestLength(0);
@@ -132,11 +155,20 @@ const App = (props) => {
       <BannerTop text="This is NOT the official course website. Visit the Edmentum site for further information"></BannerTop>
       <ContainerPadded>
         <Header></Header>
-        <AllUnitsPage
-          changeUnitMainPage={changeUnitMainPage}
-          courseInfo={courseInfo}
-        ></AllUnitsPage>
+        {isMobile ? (
+          <AllUnitsPageMobile
+            changeUnitMainPage={changeUnitMainPage}
+            courseInfo={courseInfo}
+          ></AllUnitsPageMobile>
+        ) : (
+          <AllUnitsPage
+            changeUnitMainPage={changeUnitMainPage}
+            courseInfo={courseInfo}
+          ></AllUnitsPage>
+        )}
+
         <UnitOverviewPage
+          isMobile={isMobile}
           forwardedRef={forwardedRef}
           tallyScore={tallyScore}
           changeUnit={changeUnit}

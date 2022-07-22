@@ -89,3 +89,8 @@ a:active {
 .redBorder { 
   border: 3px solid red !important; 
 }
+
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}

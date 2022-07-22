@@ -17,10 +17,16 @@ export const UnitCard = styled.div.attrs((props) => ({
 
 export const UnitInfoContainer = styled.div`
   position: absolute;
+  height: 30%;
   bottom: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 599px) {
+    bottom: 25px;
+    height: auto;
+  }
 `;
 
 export const UnitNumber = styled.div`
@@ -28,6 +34,10 @@ export const UnitNumber = styled.div`
   text-align: center;
   color: white;
   font-family: var(--emphasizedText);
+
+  @media only screen and (max-width: 599px) {
+    font-size: 8vw;
+  }
 `;
 
 export const UnitName = styled.div`
@@ -36,4 +46,8 @@ export const UnitName = styled.div`
   font-size: 1.75vw;
   color: white;
   font-family: var(--emphasizedText);
+
+  @media only screen and (max-width: 599px) {
+    font-size: 6.5vw;
+  }
 `;

@@ -145,18 +145,29 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
         ))
       : (display = (
           <>
-            <UnitOverviewHeadline text="Unit Practice Test"></UnitOverviewHeadline>
+            <UnitOverviewHeadline
+              isMobile={props.isMobile}
+              text="Unit Practice Test"
+            ></UnitOverviewHeadline>
             <Message
               ref={forwardedRef}
               visibility={
                 props.unansweredQuestions == true ? "visible" : "hidden"
               }
               padding={
-                props.unansweredQuestions == true
+                props.unansweredQuestions == true && props.isMobile
+                  ? "0.25rem 0rem 1rem 0rem"
+                  : props.unansweredQuestions == true
                   ? "0.5rem 0rem 1.5rem 0rem"
                   : "0rem"
               }
-              fontSize={props.unansweredQuestions == true ? "2vw" : "0vw"}
+              fontSize={
+                props.unansweredQuestions && props.isMobile == true
+                  ? "4.5vw"
+                  : props.unansweredQuestions == true
+                  ? "2vw"
+                  : "0vw"
+              }
             >
               Reminder: <span>Answer all questions before submitting</span>
             </Message>

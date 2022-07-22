@@ -4,6 +4,7 @@ export const GridContainer = styled.div.attrs((props) => ({
   width: props.width,
 }))`
   width: ${(props) => props.width};
+
   display: grid;
   gap: 1em;
   grid-auto-rows: 1fr;

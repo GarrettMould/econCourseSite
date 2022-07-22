@@ -3,6 +3,7 @@ import { ChangeUnit } from "../Elements/styles/ChangeUnitButton.styled";
 import SubmitButton from "../Elements/SubmitButton";
 import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
 import AdditionalResources from "../Subcomponents/AdditionalResources";
+
 import PPTFileList from "../Subcomponents/PPTFileList";
 import UnitConceptList from "../Subcomponents/UnitConceptList";
 import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
@@ -38,6 +39,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
       <PaddingTop></PaddingTop>
       <PaddingTop></PaddingTop>
       <UnitOverviewHeadline
+        isMobile={props.isMobile}
         text={`Unit ${unit} - Lesson Materials`}
       ></UnitOverviewHeadline>
       <PPTFileList
@@ -45,20 +47,28 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
         courseInfo={props.courseInfo}
       ></PPTFileList>
       <PaddingTop></PaddingTop>
-      <UnitOverviewHeadline text="Unit Concepts"></UnitOverviewHeadline>
+      <UnitOverviewHeadline
+        isMobile={props.isMobile}
+        text="Unit Concepts"
+      ></UnitOverviewHeadline>
       <UnitConceptList
+        isMobile={props.isMobile}
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></UnitConceptList>
       <PaddingTop></PaddingTop>
-      <UnitOverviewHeadline text="Additional Resources"></UnitOverviewHeadline>
+      <UnitOverviewHeadline
+        isMobile={props.isMobile}
+        text="Additional Resources"
+      ></UnitOverviewHeadline>
       <AdditionalResources
+        isMobile={props.isMobile}
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></AdditionalResources>
       <PaddingTop></PaddingTop>
-
       <UnitPracticeTest
+        isMobile={props.isMobile}
         forwardedRef={forwardedRef}
         tallyScore={props.tallyScore}
         resetTest={props.resetTest}

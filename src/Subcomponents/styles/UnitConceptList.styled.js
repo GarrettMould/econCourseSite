@@ -17,4 +17,9 @@ export const ConceptName = styled.div`
   font-family: var(--emphasizedText);
   text-align: center;
   padding: 0.75rem 1rem 0.5rem 1rem;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 2.5vw;
+    padding: 0.5rem 0.75rem 0.25rem 0.75rem;
+  }
 `;

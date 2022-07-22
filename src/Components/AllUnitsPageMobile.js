@@ -1,6 +1,5 @@
 import CourseOverviewHeadline from "../Elements/CourseOverviewHeadline";
 
-import { GridContainer, GridColumn, GridRow } from "./styles/Grid.styled";
 import {
   UnitCard,
   UnitNumber,
@@ -10,12 +9,18 @@ import {
 
 import { UnitButton } from "../Elements/styles/Buttons.styled";
 
-import { PaddingTop } from "./styles/Containers.styled";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const AllUnitsPage = (props) => {
+import { Pagination } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+const AllUnitsPageMobile = (props) => {
   const mappedUnits = props.courseInfo.map((unit, i) => {
     return (
-      <GridColumn size="3">
+      <SwiperSlide>
         <UnitButton id={unit.unitNumber} onClick={props.changeUnitMainPage}>
           <UnitCard
             backgroundColor={unit.unitBackgroundColor}
@@ -27,7 +32,7 @@ const AllUnitsPage = (props) => {
             </UnitInfoContainer>
           </UnitCard>
         </UnitButton>
-      </GridColumn>
+      </SwiperSlide>
     );
   });
   return (
@@ -35,11 +40,20 @@ const AllUnitsPage = (props) => {
       <CourseOverviewHeadline
         isMobile={props.isMobile}
       ></CourseOverviewHeadline>
-      <GridContainer>
-        <GridRow>{mappedUnits}</GridRow>
-      </GridContainer>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        {mappedUnits}
+      </Swiper>
     </>
   );
 };
 
-export default AllUnitsPage;
+export default AllUnitsPageMobile;

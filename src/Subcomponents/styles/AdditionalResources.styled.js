@@ -52,4 +52,23 @@ export const ResourceCard = styled.div.attrs((props) => ({
     color: var(--primaryWhite);
     margin-bottom: 0rem;
   }
+
+  @media only screen and (max-width: 599px) {
+    div {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 3.5vw;
+      padding-bottom: 0rem;
+    }
+
+    h3 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2.25vw;
+    }
+  }
 `;

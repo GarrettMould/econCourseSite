@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Logo = styled.div`
   font-size: 4vw;
   font-weight: 600;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 5vw;
+  }
 `;
 
 export const NavBar = styled.div`

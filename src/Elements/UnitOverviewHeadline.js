@@ -6,9 +6,11 @@ const UnitOverviewHeadline = (props) => {
       justifyCotent="center"
       alignItems="center"
       width="100%"
-      padding="3% 0% 1% 0%"
+      padding={props.isMobile ? "3% 0% 3% 0%" : "3% 0% 1% 0%"}
     >
-      <Headline fontSize="3vw">{props.text}</Headline>
+      <Headline fontSize={props.isMobile ? "5.5vw" : "3vw"}>
+        {props.text}
+      </Headline>
     </FlexRow>
   );
 };
