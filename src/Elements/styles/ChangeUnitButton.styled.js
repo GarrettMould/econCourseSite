@@ -19,6 +19,6 @@ export const ChangeUnit = styled.button.attrs((props) => ({
   }
 
   @media only screen and (max-width: 599px) {
-    font-size: 4.5vw;
+    font-size: 6vw;
   }
 `;

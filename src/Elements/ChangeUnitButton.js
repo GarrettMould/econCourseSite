@@ -8,7 +8,7 @@ const ChangeUnitButton = (props) => {
       onClick={props.changeUnit}
       color={props.courseInfo[props.selectedUnit].unitSolidColor}
     >
-      <a href="#">&larr; Previous Unit</a>
+      <a href="#">&larr; Previous</a>
     </ChangeUnit>
   ) : (
     <ChangeUnit
@@ -17,7 +17,7 @@ const ChangeUnitButton = (props) => {
       onClick={props.changeUnit}
       color={props.courseInfo[props.selectedUnit].unitSolidColor}
     >
-      <a href="#">Next Unit &rarr;</a>
+      <a href="#">Next &rarr;</a>
     </ChangeUnit>
   );
 };

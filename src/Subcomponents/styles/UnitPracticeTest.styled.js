@@ -26,7 +26,7 @@ export const QuestionText = styled.div`
   padding-bottom: 1.5rem;
 
   @media only screen and (max-width: 599px) {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 `;
 
@@ -44,7 +44,7 @@ export const OptionLabel = styled.label`
   }
 
   @media only screen and (max-width: 599px) {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 `;
 

@@ -5,7 +5,8 @@ export const Logo = styled.div`
   font-weight: 600;
 
   @media only screen and (max-width: 599px) {
-    font-size: 5vw;
+    padding-top: 2%;
+    font-size: 6vw;
   }
 `;
 

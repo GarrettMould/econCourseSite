@@ -8,7 +8,7 @@ const UnitOverviewHeadline = (props) => {
       width="100%"
       padding={props.isMobile ? "3% 0% 3% 0%" : "3% 0% 1% 0%"}
     >
-      <Headline fontSize={props.isMobile ? "5.5vw" : "3vw"}>
+      <Headline fontSize={props.isMobile ? "7vw" : "3vw"}>
         {props.text}
       </Headline>
     </FlexRow>

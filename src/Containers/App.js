@@ -154,14 +154,16 @@ const App = (props) => {
     <div>
       <BannerTop text="This is NOT the official course website. Visit the Edmentum site for further information"></BannerTop>
       <ContainerPadded>
-        <Header></Header>
+        <Header isMobile={isMobile}></Header>
         {isMobile ? (
           <AllUnitsPageMobile
+            isMobile={isMobile}
             changeUnitMainPage={changeUnitMainPage}
             courseInfo={courseInfo}
           ></AllUnitsPageMobile>
         ) : (
           <AllUnitsPage
+            isMobile={isMobile}
             changeUnitMainPage={changeUnitMainPage}
             courseInfo={courseInfo}
           ></AllUnitsPage>

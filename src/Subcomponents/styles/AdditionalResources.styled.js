@@ -54,6 +54,9 @@ export const ResourceCard = styled.div.attrs((props) => ({
   }
 
   @media only screen and (max-width: 599px) {
+    width: 100%;
+    height: 200px;
+
     div {
       padding: 1rem;
     }

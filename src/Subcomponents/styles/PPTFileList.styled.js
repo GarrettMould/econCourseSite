@@ -26,7 +26,7 @@ export const ListItem = styled.li.attrs((props) => ({
   }
 
   @media only screen and (max-width: 599px) {
-    font-size: 4.5vw;
+    font-size: 5vw;
     padding-bottom: 2rem;
   }
 `;
