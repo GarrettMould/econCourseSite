@@ -54,11 +54,10 @@ export const ResourceCard = styled.div.attrs((props) => ({
   }
 
   @media only screen and (max-width: 599px) {
-    width: 100%;
-    height: 200px;
+    height: 100%;
 
     div {
-      padding: 1rem;
+      padding: 1rem 0.75rem;
     }
 
     h1 {
@@ -67,11 +66,11 @@ export const ResourceCard = styled.div.attrs((props) => ({
     }
 
     h3 {
-      font-size: 3vw;
+      font-size: 3.5vw;
     }
 
     p {
-      font-size: 2.25vw;
+      font-size: 3vw;
     }
   }
 `;

@@ -3,7 +3,6 @@ import { ChangeUnit } from "../Elements/styles/ChangeUnitButton.styled";
 import SubmitButton from "../Elements/SubmitButton";
 import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
 import AdditionalResources from "../Subcomponents/AdditionalResources";
-import AdditionalResourcesMobile from "../Subcomponents/AdditionalResourcesMobile";
 
 import PPTFileList from "../Subcomponents/PPTFileList";
 import UnitConceptList from "../Subcomponents/UnitConceptList";
@@ -16,7 +15,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
 
   return (
     <>
-      <PaddingTop></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       {props.selectedUnit >= 1 ? (
         <ChangeUnitButton
           type="previous"
@@ -37,9 +36,8 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
       ) : (
         <div></div>
       )}
-      <PaddingTop></PaddingTop>
-      <PaddingTop></PaddingTop>
-      <PaddingTop></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
         text={`Unit ${unit} - Lesson Materials`}
@@ -48,7 +46,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></PPTFileList>
-      <PaddingTop></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
         text="Unit Concepts"
@@ -58,30 +56,19 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
         selectedUnit={props.selectedUnit}
         courseInfo={props.courseInfo}
       ></UnitConceptList>
-      <PaddingTop></PaddingTop>
-      <PaddingTop></PaddingTop>
-      <PaddingTop></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
         text="Additional Resources"
       ></UnitOverviewHeadline>
-      {props.isMobile ? (
-        <AdditionalResourcesMobile
-          isMobile={props.isMobile}
-          selectedUnit={props.selectedUnit}
-          courseInfo={props.courseInfo}
-        ></AdditionalResourcesMobile>
-      ) : (
-        <AdditionalResources
-          isMobile={props.isMobile}
-          selectedUnit={props.selectedUnit}
-          courseInfo={props.courseInfo}
-        ></AdditionalResources>
-      )}
-
-      <PaddingTop></PaddingTop>
-      <PaddingTop></PaddingTop>
-      <PaddingTop></PaddingTop>
+      <AdditionalResources
+        isMobile={props.isMobile}
+        selectedUnit={props.selectedUnit}
+        courseInfo={props.courseInfo}
+      ></AdditionalResources>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <UnitPracticeTest
         isMobile={props.isMobile}
         forwardedRef={forwardedRef}

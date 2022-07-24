@@ -176,7 +176,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
                 <GridRow>{mappedTestQuestions}</GridRow>
               </Form>
             </GridContainer>
-            <PaddingTop></PaddingTop>
+            <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
             <SubmitButton
               unitTestScore={props.unitTestScore}
               tallyScore={props.tallyScore}

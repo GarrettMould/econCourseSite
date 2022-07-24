@@ -11,7 +11,7 @@ import { PaddingTop } from "./styles/Containers.styled";
 const Header = (props) => {
   return (
     <>
-      <PaddingTop></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <GridContainer width="100%">
         <GridRow>
           <GridColumn size="6">

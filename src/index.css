@@ -90,6 +90,14 @@ a:active {
   border: 3px solid red !important; 
 }
 
+.swiper { 
+  overflow: visible !important;
+}
+
+.swiper-pagination {
+  position: absolute !important;
+  bottom: -20px !important;
+}
 
 .swiper-pagination-bullet-active {
   background-color: #000 !important;

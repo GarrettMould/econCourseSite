@@ -55,7 +55,7 @@ const AdditionalResources = (props) => {
     );
   });
   return (
-    <GridContainer width={props.isMobile ? "90%" : "100%"}>
+    <GridContainer width={props.isMobile ? "100%" : "100%"}>
       <GridRow>{mappedResources}</GridRow>
     </GridContainer>
   );

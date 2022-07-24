@@ -14,6 +14,8 @@ export const ContainerPadded = styled.div`
   }
 `;
 
-export const PaddingTop = styled.div`
-  padding-top: 5%;
+export const PaddingTop = styled.div.attrs((props) => ({
+  top: props.top,
+}))`
+  padding-top: ${(props) => props.top};
 `;
