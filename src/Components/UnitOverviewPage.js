@@ -15,29 +15,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
 
   return (
     <>
-      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      {props.selectedUnit >= 1 ? (
-        <ChangeUnitButton
-          type="previous"
-          changeUnit={props.changeUnit}
-          selectedUnit={props.selectedUnit}
-          courseInfo={props.courseInfo}
-        ></ChangeUnitButton>
-      ) : (
-        <div></div>
-      )}
-      {props.selectedUnit <= 2 ? (
-        <ChangeUnitButton
-          type="next"
-          changeUnit={props.changeUnit}
-          selectedUnit={props.selectedUnit}
-          courseInfo={props.courseInfo}
-        ></ChangeUnitButton>
-      ) : (
-        <div></div>
-      )}
-      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
+      <PaddingTop top={props.isMobile ? "10%" : "5%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
         text={`Unit ${unit} - Lesson Materials`}

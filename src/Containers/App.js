@@ -1,9 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { Routes, Route } from "react-router-dom";
+
 import { ContainerPadded } from "../Components/styles/Containers.styled";
 import BannerTop from "../Elements/BannerTop";
 import Header from "../Components/Header";
+import Home from "../Components/Home";
 import AllUnitsPage from "../Components/AllUnitsPage";
 import UnitOverviewPage from "../Components/UnitOverviewPage";
 
@@ -155,35 +158,38 @@ const App = (props) => {
       <BannerTop text="This is NOT the official course website. Visit the Edmentum site for further information"></BannerTop>
       <ContainerPadded>
         <Header isMobile={isMobile}></Header>
-        {isMobile ? (
-          <AllUnitsPageMobile
-            isMobile={isMobile}
-            changeUnitMainPage={changeUnitMainPage}
-            courseInfo={courseInfo}
-          ></AllUnitsPageMobile>
-        ) : (
-          <AllUnitsPage
-            isMobile={isMobile}
-            changeUnitMainPage={changeUnitMainPage}
-            courseInfo={courseInfo}
-          ></AllUnitsPage>
-        )}
-
-        <UnitOverviewPage
-          isMobile={isMobile}
-          forwardedRef={forwardedRef}
-          tallyScore={tallyScore}
-          changeUnit={changeUnit}
-          resetTest={resetTest}
-          unansweredQuestions={unansweredQuestions}
-          incorrectQuestionsList={incorrectQuestionsList}
-          unitTestLength={unitTestLength}
-          unitTestScorePerc={unitTestScorePerc}
-          unitTestScore={unitTestScore}
-          testFinished={testFinished}
-          selectedUnit={selectedUnit}
-          courseInfo={courseInfo}
-        ></UnitOverviewPage>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                isMobile={isMobile}
+                changeUnitMainPage={changeUnitMainPage}
+                courseInfo={courseInfo}
+              ></Home>
+            }
+          />
+          <Route
+            path="/UnitOverviewPage"
+            element={
+              <UnitOverviewPage
+                isMobile={isMobile}
+                forwardedRef={forwardedRef}
+                tallyScore={tallyScore}
+                changeUnit={changeUnit}
+                resetTest={resetTest}
+                unansweredQuestions={unansweredQuestions}
+                incorrectQuestionsList={incorrectQuestionsList}
+                unitTestLength={unitTestLength}
+                unitTestScorePerc={unitTestScorePerc}
+                unitTestScore={unitTestScore}
+                testFinished={testFinished}
+                selectedUnit={selectedUnit}
+                courseInfo={courseInfo}
+              ></UnitOverviewPage>
+            }
+          />
+        </Routes>
       </ContainerPadded>
     </div>
   );
