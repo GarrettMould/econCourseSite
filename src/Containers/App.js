@@ -112,10 +112,11 @@ const App = (props) => {
 
     var incorrectQuestions = [];
 
+    console.log(question.length)
     // Runs if all questions have been answered
-    if (question.length == questionsLength) {
+    if (question.length === questionsLength) {
       question.forEach((q) => {
-        if (q.value == "true") {
+        if (q.value === "true") {
           localScore = localScore + 1;
         } else {
           //If the answer is incorrect, add that question to the list of incorrect questions
@@ -196,6 +197,7 @@ const App = (props) => {
             element={
               <UnitTestResultsBox
                 resetTest={resetTest}
+                testFinished={testFinished}
                 unitTestLength={unitTestLength}
                 unitTestScorePerc={unitTestScorePerc}
                 unitTestScore={unitTestScore}

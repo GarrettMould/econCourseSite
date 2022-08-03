@@ -135,18 +135,18 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
       ></UnitOverviewHeadline>
       <Message
         ref={forwardedRef}
-        visibility={props.unansweredQuestions == true ? "visible" : "hidden"}
+        visibility={props.unansweredQuestions === true ? "visible" : "hidden"}
         padding={
-          props.unansweredQuestions == true && props.isMobile
+          props.unansweredQuestions === true && props.isMobile
             ? "0.25rem 0rem 1rem 0rem"
-            : props.unansweredQuestions == true
+            : props.unansweredQuestions === true
             ? "0.5rem 0rem 1.5rem 0rem"
             : "0rem"
         }
         fontSize={
-          props.unansweredQuestions && props.isMobile == true
+          props.unansweredQuestions && props.isMobile === true
             ? "4.5vw"
-            : props.unansweredQuestions == true
+            : props.unansweredQuestions === true
             ? "2vw"
             : "0vw"
         }
@@ -159,12 +159,16 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
         </Form>
       </GridContainer>
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      <Link style={{ textDecoration: "none" }} to="/UnitTestResults">
+      {props.testFinished ? <Link style={{ textDecoration: "none" }} to="/UnitTestResults">
         <SubmitButton
           unitTestScore={props.unitTestScore}
           tallyScore={props.tallyScore}
         ></SubmitButton>
-      </Link>
+      </Link> : <SubmitButton
+          unitTestScore={props.unitTestScore}
+          tallyScore={props.tallyScore}
+        ></SubmitButton>}
+      
     </>
   );
 };
