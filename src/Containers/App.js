@@ -10,6 +10,7 @@ import Home from "../Components/Home";
 import AllUnitsPage from "../Components/AllUnitsPage";
 import UnitTestResultsBox from "../Subcomponents/UnitTestResultsBox";
 import UnitOverviewPage from "../Components/UnitOverviewPage";
+import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
 
 import { courseInformation } from "../CourseInformation";
 import AllUnitsPageMobile from "../Components/AllUnitsPageMobile";
@@ -191,6 +192,21 @@ const App = (props) => {
               ></UnitOverviewPage>
             }
           />
+
+          <Route path="/UnitTest" element={<UnitPracticeTest
+        isMobile={isMobile}
+        forwardedRef={forwardedRef}
+        tallyScore={tallyScore}
+        resetTest={resetTest}
+        unansweredQuestions={unansweredQuestions}
+        incorrectQuestionsList={incorrectQuestionsList}
+        unitTestLength={unitTestLength}
+        unitTestScorePerc={unitTestScorePerc}
+        unitTestScore={unitTestScore}
+        testFinished={testFinished}
+        selectedUnit={selectedUnit}
+        courseInfo={courseInfo}
+      ></UnitPracticeTest>}/>
 
           <Route
             path="/UnitTestResults"
