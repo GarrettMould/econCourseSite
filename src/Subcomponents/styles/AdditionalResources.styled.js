@@ -1,0 +1,76 @@
+import styled from "styled-components";
+
+export const ResourceCard = styled.div.attrs((props) => ({
+  backgroundColor: props.backgroundColor,
+  borderColor: props.borderColor,
+  textColor: props.textColor,
+}))`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: ${(props) => props.backgroundColor};
+  border: 3px solid ${(props) => props.borderColor};
+  border-radius: 10px;
+
+  div {
+    padding: 1.5rem;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  a {
+    color: var(--primaryWhite);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: var(--emphasizedText);
+    font-size: 2.25vw;
+    background-color: transparent;
+    color: var(--primaryWhite);
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 2vw;
+    font-family: var(--emphasizedText);
+    background-color: transparent;
+    color: ${(props) => props.textColor};
+  }
+
+  p {
+    font-size: 1.75vw;
+    font-family: var(--emphasizedText);
+    background-color: transparent;
+    color: var(--primaryWhite);
+    margin-bottom: 0rem;
+  }
+
+  @media only screen and (max-width: 599px) {
+    height: 100%;
+
+    div {
+      padding: 1rem 0.75rem;
+    }
+
+    h1 {
+      font-size: 3.5vw;
+      padding-bottom: 0rem;
+    }
+
+    h3 {
+      font-size: 3.5vw;
+    }
+
+    p {
+      font-size: 3vw;
+    }
+  }
+`;

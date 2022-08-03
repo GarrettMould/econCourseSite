@@ -1,13 +1,115 @@
+:root {
+  --primaryBlack: #121212;
+  --primaryWhite: #fff;
+  --emphasizedText: "CalibreSemibold";
+  --lessEmphasizedText: "CalibreMedium";
+  --backgroundSTOne: "rgba(255, 195, 0, 0.5)",
+  --backgroundSTTwo: "rgba(3, 255, 6, 0.5)", 
+  --backgroundSTThree: "rgba(255, 3, 243, 0.5)",
+  --backgroundSTFour: "rgba(3, 42, 255, 0.5)",
+  --borderSTOne:  "#FFC300", 
+  --borderSTTwo:  "#03FF06",
+  --borderSTThree:  "#FF03F3",
+  --borderSTFour:  "#032AFF",
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: rgba(226, 212, 255, 0.5) !important; 
+  border: 2px solid rgba(226, 212, 255, 1);
+  margin: 4.75rem 0.5rem 0.4rem 0.5rem !important;
+  border-radius: 0.25rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root { 
+  background-color: var(--primaryWhite);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: CalibreBold;
+  src: url(../public/fonts/Calibre-Bold.woff);
+}
+
+@font-face {
+  font-family: CalibreSemibold;
+  src: url(../public/fonts/Calibre-Semibold.woff);
+}
+
+@font-face {
+  font-family: CalibreMedium;
+  src: url(../public/fonts/Calibre-Medium.woff);
+}
+
+@font-face {
+  font-family: CalibreRegular;
+  src: url(../public/fonts/Calibre-Regular.woff);
+}
+
+@font-face {
+  font-family: CalibreLight;
+  src: url(../public/fonts/Calibre-Light.woff);
+}
+
+@font-face {
+  font-family: CalibreThin;
+  src: url(../public/fonts/Calibre-Thin.woff);
+}
+
+* {
+  font-family: CalibreRegular;
+  color: var(--primaryBlack);
+  background-color: transparent;
+}
+
+*::selection {
+  background: transparent;
+  color: (--primaryBlack);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: (--primaryBlack);
+  
+}
+
+a:hover,
+a:visited,
+a:active {
+  color: (--primaryBlack);
+}
+
+.redBorder { 
+  border: 3px solid red !important; 
+}
+
+.swiper { 
+  overflow: visible !important;
+}
+
+.swiper-pagination {
+  position: absolute !important;
+  bottom: -20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+.disabled-link { 
+  pointer-events: none;
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+
+.enabled-link { 
+  pointer-events: auto;
 }
