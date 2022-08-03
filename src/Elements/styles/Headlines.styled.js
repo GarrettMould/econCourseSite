@@ -4,5 +4,5 @@ export const Headline = styled.div.attrs((props) => ({
   fontSize: props.fontSize,
 }))`
   font-size: ${(props) => props.fontSize};
-  font-family: var(--emphasizedText);
+  font-family: var(--lessEmphasizedText);
 `;

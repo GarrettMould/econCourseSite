@@ -6,7 +6,7 @@ const UnitOverviewHeadline = (props) => {
       justifyCotent="center"
       alignItems="center"
       width="100%"
-      padding={props.isMobile ? "3% 0% 6% 0%" : "3% 0% 2% 0%"}
+      padding={props.isMobile ? "3% 0% 6% 0%" : "3% 0% 3% 0%"}
     >
       <Headline fontSize={props.isMobile ? "7vw" : "3vw"}>
         {props.text}
