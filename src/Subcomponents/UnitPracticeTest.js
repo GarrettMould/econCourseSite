@@ -32,6 +32,8 @@ import UnitTestResultsBox from "./UnitTestResultsBox";
 const UnitPracticeTest = ({ forwardedRef, ...props }) => {
   let testQuestions = props.courseInfo[props.selectedUnit].unitPracticeTest;
 
+  var unit = props.courseInfo[props.selectedUnit].unitNumber;
+
   const mappedTestQuestions = testQuestions.map((question, i) => {
     var backgroundColor;
     var borderColor;
@@ -131,7 +133,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
     <>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
-        text="Unit Practice Test"
+        text={`Unit ${unit} - Practice Test`}
       ></UnitOverviewHeadline>
       <Message
         ref={forwardedRef}

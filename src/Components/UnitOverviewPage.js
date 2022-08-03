@@ -27,7 +27,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
-        text="Unit Concepts"
+        text={`Unit ${unit} - Important Concepts`}
       ></UnitOverviewHeadline>
       <UnitConceptList
         isMobile={props.isMobile}
@@ -38,7 +38,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
-        text="Additional Resources"
+        text={`Unit ${unit} - Additional Resources`}
       ></UnitOverviewHeadline>
       <AdditionalResources
         isMobile={props.isMobile}

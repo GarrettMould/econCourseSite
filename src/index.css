@@ -92,7 +92,7 @@ a:active {
 }
 
 .swiper { 
-  overflow: visible !important;
+  overflow: hidden!important;
 }
 
 .swiper-pagination {
