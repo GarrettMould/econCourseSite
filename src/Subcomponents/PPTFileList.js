@@ -10,15 +10,15 @@ const PPTFileList = (props) => {
     //Set the bullet color and link color dynamically, based on the sub-topic of the lesson
     var color;
     if (lesson.subtopic === 1) {
-      color = "#FFC300";
+      color = "rgba(255, 195, 0, 0.25)";
     } else if (lesson.subtopic === 2) {
-      color = "#03FF06";
+      color = "rgba(3, 255, 6, 0.25)";
     } else if (lesson.subtopic === 3) {
-      color = "#FF03F3";
+      color = "rgba(255, 3, 243, 0.25)";
     } else if (lesson.subtopic === 4) {
-      color = "#032AFF";
+      color = "rgba(3, 42, 255, 0.25)";
     } else if (lesson.subtopic === 0) {
-      color = "#FF0303";
+      color = "rgba(255, 3, 3, 0.25)";
     } else {
       color = "#121212";
     }

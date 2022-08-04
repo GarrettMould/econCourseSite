@@ -5,7 +5,7 @@ export var courseInformation = [
     unitUnlocked: true,
     unitName: "Introduction to Economics",
     unitBackgroundColor: "rgba(255, 195, 0, 0.5)",
-    unitBorderColor: "rgba(255, 195, 0, 0.2)",
+    unitBorderColor: "#004012",
     unitSolidColor: "#ffc300",
 
     unitConcepts: [
@@ -45,6 +45,19 @@ export var courseInformation = [
         name: "Allocation of Resources",
         subtopic: 2,
       },
+      {
+        name: "3 Basic Questions",
+        subtopic: 2,
+      },
+      {
+        name: "Economic Systems",
+        subtopic: 2,
+      },
+      {
+        name: "Circular Flow Model",
+        subtopic: 2,
+      },
+      
       {
         name: "Invisible Hand",
         subtopic: 3,
@@ -152,7 +165,8 @@ export var courseInformation = [
         summary:
           "A thorough explanation of the main differences between command systems and market systems.",
         link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
-        subtopic: 1,
+        subtopic: 3,
+        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
       },
       {
         name: "Real Life Examples of Scarcity",
@@ -161,6 +175,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 1,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Opportunity Costs", subTopic: 1}],
       },
       {
         name: "How Countries Across the World Rationed Vaccines",
@@ -169,6 +184,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 2,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Non-Price Rationing", subTopic: 2}],
       },
       {
         name: "The Freest Economies in the World",
@@ -177,6 +193,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 3,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "3 Basic Questions", subTopic: 3}, {name: "Economic Systems", subTopic: 3}],
       },
       {
         name: "Supply and Demand in 8 Minutes",
@@ -185,6 +202,7 @@ export var courseInformation = [
           "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
         link: "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
         subtopic: 4,
+        concepts: [{name: "Equilibrium", subTopic: 4}, {name: "Determinants of Supply", subTopic: 4}, {name: "Determinants of Demand", subTopic: 4}]
       },
     ],
     unitPracticeTest: [
@@ -350,6 +368,7 @@ export var courseInformation = [
       },
     ],
   },
+  
   {
     id: 1,
     unitNumber: 2,
@@ -494,12 +513,22 @@ export var courseInformation = [
     ],
     additionalResources: [
       {
+        name: "Command and Market Systems (Khan Academy)",
+        type: "YouTube Video",
+        summary:
+          "A thorough explanation of the main differences between command systems and market systems.",
+        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
+        subtopic: 3,
+        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
+      },
+      {
         name: "Real Life Examples of Scarcity",
         type: "Web Article",
         summary:
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 1,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Opportunity Costs", subTopic: 1}],
       },
       {
         name: "How Countries Across the World Rationed Vaccines",
@@ -508,6 +537,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 2,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Non-Price Rationing", subTopic: 2}],
       },
       {
         name: "The Freest Economies in the World",
@@ -516,6 +546,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 3,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "3 Basic Questions", subTopic: 3}, {name: "Economic Systems", subTopic: 3}],
       },
       {
         name: "Supply and Demand in 8 Minutes",
@@ -524,6 +555,7 @@ export var courseInformation = [
           "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
         link: "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
         subtopic: 4,
+        concepts: [{name: "Equilibrium", subTopic: 4}, {name: "Determinants of Supply", subTopic: 4}, {name: "Determinants of Demand", subTopic: 4}]
       },
     ],
     unitPracticeTest: [
@@ -833,12 +865,22 @@ export var courseInformation = [
     ],
     additionalResources: [
       {
+        name: "Command and Market Systems (Khan Academy)",
+        type: "YouTube Video",
+        summary:
+          "A thorough explanation of the main differences between command systems and market systems.",
+        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
+        subtopic: 3,
+        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
+      },
+      {
         name: "Real Life Examples of Scarcity",
         type: "Web Article",
         summary:
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 1,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Opportunity Costs", subTopic: 1}],
       },
       {
         name: "How Countries Across the World Rationed Vaccines",
@@ -847,6 +889,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 2,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Non-Price Rationing", subTopic: 2}],
       },
       {
         name: "The Freest Economies in the World",
@@ -855,6 +898,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 3,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "3 Basic Questions", subTopic: 3}, {name: "Economic Systems", subTopic: 3}],
       },
       {
         name: "Supply and Demand in 8 Minutes",
@@ -863,6 +907,7 @@ export var courseInformation = [
           "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
         link: "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
         subtopic: 4,
+        concepts: [{name: "Equilibrium", subTopic: 4}, {name: "Determinants of Supply", subTopic: 4}, {name: "Determinants of Demand", subTopic: 4}]
       },
     ],
     unitPracticeTest: [
@@ -1172,12 +1217,22 @@ export var courseInformation = [
     ],
     additionalResources: [
       {
+        name: "Command and Market Systems (Khan Academy)",
+        type: "YouTube Video",
+        summary:
+          "A thorough explanation of the main differences between command systems and market systems.",
+        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
+        subtopic: 3,
+        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
+      },
+      {
         name: "Real Life Examples of Scarcity",
         type: "Web Article",
         summary:
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 1,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Opportunity Costs", subTopic: 1}],
       },
       {
         name: "How Countries Across the World Rationed Vaccines",
@@ -1186,6 +1241,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 2,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Non-Price Rationing", subTopic: 2}],
       },
       {
         name: "The Freest Economies in the World",
@@ -1194,6 +1250,7 @@ export var courseInformation = [
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
         link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 3,
+        concepts: [{name: "Scarcity", subTopic: 1}, {name: "3 Basic Questions", subTopic: 3}, {name: "Economic Systems", subTopic: 3}],
       },
       {
         name: "Supply and Demand in 8 Minutes",
@@ -1202,6 +1259,7 @@ export var courseInformation = [
           "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
         link: "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
         subtopic: 4,
+        concepts: [{name: "Equilibrium", subTopic: 4}, {name: "Determinants of Supply", subTopic: 4}, {name: "Determinants of Demand", subTopic: 4}]
       },
     ],
     unitPracticeTest: [

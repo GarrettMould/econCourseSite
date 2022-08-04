@@ -17,7 +17,7 @@ import AllUnitsPageMobile from "../Components/AllUnitsPageMobile";
 
 const App = (props) => {
   const [courseInfo, setCourseInfo] = useState(courseInformation);
-  const [selectedUnit, setSelectedUnit] = useState(2);
+  const [selectedUnit, setSelectedUnit] = useState(0);
   const [unitTestLength, setUnitTestLength] = useState(0);
   const [unitTestScore, setUnitTestScore] = useState(0);
   const [unitTestScorePerc, setUnitTestScorePerc] = useState(0);

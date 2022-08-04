@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const QuestionCard = styled.div.attrs((props) => ({
-  backgroundColor: props.backgroundColor,
+  textColor: props.textColor,
   borderColor: props.borderColor,
 }))`
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.backgroundColor};
-  border: 3px solid ${(props) => props.borderColor};
+  border: 3px solid var(--primaryBlack);
   border-radius: 15px;
 `;
 
@@ -19,9 +19,11 @@ export const QuestionAnswerContainer = styled.div`
   }
 `;
 
-export const QuestionText = styled.div`
-  font-family: var(--emphasizedText);
-  color: var(--primaryWhite);
+export const QuestionText = styled.div.attrs((props) => ({ 
+  textColor: props.textColor,
+}))`
+  font-family: var(--lessEmphasizedText);
+  color: ${(props) => props.textColor};
   font-size: 2vw;
   padding-bottom: 1.5rem;
 
@@ -34,8 +36,8 @@ export const OptionLabel = styled.label`
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(--primaryWhite);
-  font-family: var(--lessEmphasizedText);
+  color: var(--primaryBlack);
+  font-weight: 400;
   font-size: 1.5vw;
   padding-bottom: 1rem;
 

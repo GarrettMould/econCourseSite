@@ -31,7 +31,7 @@ export const ResourceCard = styled.div.attrs((props) => ({
   }
 
   h1 {
-    font-family: var(--emphasizedText);
+    font-family: var(--lessEmphasizedText);
     font-size: 2.25vw;
     background-color: transparent;
     color: var(--primaryWhite);
@@ -40,14 +40,14 @@ export const ResourceCard = styled.div.attrs((props) => ({
 
   h3 {
     font-size: 2vw;
-    font-family: var(--emphasizedText);
+    font-family: var(--lessEmphasizedText);
     background-color: transparent;
     color: ${(props) => props.textColor};
   }
 
   p {
     font-size: 1.75vw;
-    font-family: var(--emphasizedText);
+    font-family: var(--lessEmphasizedText);
     background-color: transparent;
     color: var(--primaryWhite);
     margin-bottom: 0rem;
@@ -74,3 +74,89 @@ export const ResourceCard = styled.div.attrs((props) => ({
     }
   }
 `;
+
+
+export const ResourceCardCOPY = styled.div.attrs((props) => ({ 
+  color: props.color,
+}))`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: transparent;
+  padding: 5% 0% 0% 0%;
+
+  div { 
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: ${(props) => props.color};
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-family: var(--lessEmphasizedText);
+    font-size: 2.5vw;
+    background-color: transparent;
+    color: ${(props) => props.color};
+  }
+
+  h3 {
+    font-size: 2.25vw;
+    font-family: var(--lessEmphasizedText);
+    background-color: transparent;
+    color: var(--primaryBlack);
+    padding-bottom: 0.25rem;
+   
+  }
+
+  p {
+    font-size: 2vw;
+    background-color: transparent;
+    color: var(--primaryBlack);
+    margin-bottom: 0rem;
+  }
+
+  @media only screen and (max-width: 599px) {
+  
+
+   div { 
+    padding-bottom: 0rem;
+  }
+    h1 {
+      font-size: 4vw;
+      padding-bottom: 0rem;
+    }
+
+    h3 {
+      font-size: 4vw;
+      padding-bottom: 0rem;
+    }
+
+    p {
+      font-size: 3.5vw;
+    }
+  }
+`;
+
+export const Padding = styled.div.attrs((props) => ({ 
+  height: props.height,
+}))`
+padding-bottom: 5%;
+position: relative;
+
+:after { 
+  position: absolute;
+        content: '';
+        width: 100%;
+        height: ${(props) => props.height};
+		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+        bottom: -4px;
+        background: var(--primaryBlack);
+        
+}
+`

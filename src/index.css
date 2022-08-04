@@ -1,6 +1,7 @@
 :root {
-  --primaryBlack: #121212;
+  --primaryBlack: #3e3355;
   --primaryWhite: #fff;
+  --borderColor: #004012;
   --emphasizedText: "CalibreSemibold";
   --lessEmphasizedText: "CalibreMedium";
   --backgroundSTOne: "rgba(255, 195, 0, 0.5)",

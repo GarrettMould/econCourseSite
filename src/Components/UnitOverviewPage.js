@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
 
-import ChangeUnitButton from "../Elements/ChangeUnitButton";
-import { ChangeUnit } from "../Elements/styles/ChangeUnitButton.styled";
-import SubmitButton from "../Elements/SubmitButton";
 import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
 import AdditionalResources from "../Subcomponents/AdditionalResources";
 
 import PPTFileList from "../Subcomponents/PPTFileList";
 import UnitConceptList from "../Subcomponents/UnitConceptList";
-import UnitPracticeTest from "../Subcomponents/UnitPracticeTest";
 import TakePracticeTestButton from "../Elements/TakePracticeTestButton";
+import AdditionalResourcesCOPY from "../Subcomponents/AdditionalResourcesCOPY";
 
 import { PaddingTop } from "./styles/Containers.styled";
 
@@ -43,11 +40,9 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
         isMobile={props.isMobile}
         text={`Unit ${unit} - Additional Resources`}
       ></UnitOverviewHeadline>
-      <AdditionalResources
-        isMobile={props.isMobile}
+      <AdditionalResourcesCOPY isMobile={props.isMobile}
         selectedUnit={props.selectedUnit}
-        courseInfo={props.courseInfo}
-      ></AdditionalResources>
+        courseInfo={props.courseInfo}></AdditionalResourcesCOPY>      
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <Link style={{ textDecoration: "none" }} to="/UnitTest"><TakePracticeTestButton onClick={props.resetTest}></TakePracticeTestButton></Link>

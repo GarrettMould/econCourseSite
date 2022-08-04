@@ -14,19 +14,34 @@ export const PPTList = styled.ul`
 export const ListItem = styled.li.attrs((props) => ({
   color: props.color,
 }))`
+  padding-bottom: 2%;
   font-size: 2.5vw;
-  padding-bottom: 2rem;
 
+  
   a {
-    color: ${(props) => props.color};
+    color: var(--primaryBlack);
+    text-decoration: none;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0) 50%, ${(props) => props.color} 50%);
+    background-size: 75% 80%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    transition: background .35s;
   }
 
-  a:hover {
-    text-decoration: none;
+  a:hover { 
+    background-size: 100% 80%;
   }
+
+
 
   @media only screen and (max-width: 599px) {
-    font-size: 5vw;
+    font-size: 6vw;
     padding-bottom: 2rem;
+
+    a {
+    background-size: 100% 80%;
+    
+    
+  }
   }
 `;

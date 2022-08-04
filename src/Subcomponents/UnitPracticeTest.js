@@ -37,20 +37,20 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
   const mappedTestQuestions = testQuestions.map((question, i) => {
     var backgroundColor;
     var borderColor;
-    if (question.subtopic == 1) {
-      borderColor = "rgba(255, 195, 0, 0.2)";
+    if (question.subtopic === 1) {
+      borderColor = "#004012";
       backgroundColor = "rgba(255, 195, 0, 0.5)";
-    } else if (question.subtopic == 2) {
-      borderColor = "rgba(3, 255, 6, 0.2)";
+    } else if (question.subtopic === 2) {
+      borderColor = "#004012";
       backgroundColor = "rgba(3, 255, 6, 0.5)";
-    } else if (question.subtopic == 3) {
-      borderColor = "rgba(255, 3, 243, 0.2)";
+    } else if (question.subtopic === 3) {
+      borderColor = "#004012";
       backgroundColor = "rgba(255, 3, 243, 0.5)";
-    } else if (question.subtopic == 4) {
-      borderColor = "rgba(3, 42, 255, 0.2)";
+    } else if (question.subtopic === 4) {
+      borderColor = "#004012";
       backgroundColor = "rgba(3, 42, 255, 0.5)";
-    } else if (question.subtopic == 0) {
-      borderColor = "#FF0303";
+    } else if (question.subtopic === 0) {
+      borderColor = "#004012";
       backgroundColor = "rgba(255, 3, 3, 0.5)";
     } else {
       borderColor = "#121212";
@@ -67,7 +67,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
             id={question.questionNumber}
           >
             <QuestionAnswerContainer>
-              <QuestionText>
+              <QuestionText backgroundColor={backgroundColor}>
                 {question.questionNumber})&nbsp;{question.questionText}
               </QuestionText>
 

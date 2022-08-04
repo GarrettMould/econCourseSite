@@ -11,7 +11,6 @@ export const UnitCard = styled.div.attrs((props) => ({
   width: 100%;
   height: 400px;
   background-color: ${(props) => props.backgroundColor};
-  border: 4px solid ${(props) => props.borderColor};
   border-radius: 15px;
 `;
 
@@ -39,8 +38,8 @@ export const UnitInfoContainer = styled.div`
 export const UnitNumber = styled.div`
   font-size: 2.25vw;
   text-align: center;
-  color: white;
-  font-family: var(--emphasizedText);
+  color: var(--primaryBlack);
+  font-family: var(--lessEmphasizedText);
 
   @media only screen and (max-width: 599px) {
     font-size: 8vw;
@@ -51,8 +50,8 @@ export const UnitName = styled.div`
   width: 90%;
   text-align: center;
   font-size: 1.75vw;
-  color: white;
-  font-family: var(--emphasizedText);
+  color: var(--primaryBlack);
+  font-family: var(--lessEmphasizedText);
 
   @media only screen and (max-width: 599px) {
     font-size: 6.5vw;
