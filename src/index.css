@@ -33,6 +33,11 @@ code {
 }
 
 @font-face {
+  font-family: FoundersGroteskBold;
+  src: url(../public/fonts/FoundersGrotesk-Bold.otf);
+}
+
+@font-face {
   font-family: CalibreBold;
   src: url(../public/fonts/Calibre-Bold.woff);
 }

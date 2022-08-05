@@ -13,9 +13,9 @@ const Header = (props) => {
   return (
     <>
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      <FlexRow justifyContent="center">
+      <FlexRow justifyContent="start">
           <Link style={{ textDecoration: "none" }} to="/">
-              <Logo>Econ 101</Logo>
+              <Logo><span>Geek</span>enomics</Logo>
           </Link>
       </FlexRow>
           

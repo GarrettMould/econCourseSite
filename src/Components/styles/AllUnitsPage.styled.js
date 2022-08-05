@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const UnitCard = styled.div.attrs((props) => ({
   backgroundColor: props.backgroundColor,
   borderColor: props.borderColor,
+  height: props.height,
 }))`
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: ${(props) => props.height};
   background-color: ${(props) => props.backgroundColor};
   border-radius: 15px;
 `;
@@ -35,25 +36,37 @@ export const UnitInfoContainer = styled.div`
   }
 `;
 
-export const UnitNumber = styled.div`
-  font-size: 2.25vw;
-  text-align: center;
+export const UnitNumber = styled.div.attrs((props) => ({
+  fontSize: props.fontSize, 
+  textAlign: props.textAlign,
+}))`
+  font-size: ${(props) => props.fontSize};
+  text-align: ${(props) => props.textAlign};
   color: var(--primaryBlack);
   font-family: var(--lessEmphasizedText);
-
-  @media only screen and (max-width: 599px) {
-    font-size: 8vw;
-  }
 `;
 
-export const UnitName = styled.div`
-  width: 90%;
+export const UnitName = styled.div.attrs((props) => ({
+  fontSize: props.fontSize, 
+  width: props.width,
+}))`
+  width: ${(props) => props.width};
   text-align: center;
-  font-size: 1.75vw;
+  font-size: ${(props) => props.fontSize}; 
   color: var(--primaryBlack);
-  font-family: var(--lessEmphasizedText);
-
-  @media only screen and (max-width: 599px) {
-    font-size: 6.5vw;
-  }
+  font-family: var(--lessEmphasizedText); 
 `;
+
+export const UnitInfoContainerMobile = styled.div `
+position: absolute;
+  height: 30%;
+  bottom: 10px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+
+  
+`
+

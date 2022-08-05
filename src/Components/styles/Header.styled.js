@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 export const Logo = styled.div`
-  font-size: 4vw;
-  font-weight: 600;
-  
-  
+  font-size: 6vw;
+  font-family:"FoundersGroteskBold";
+  font-weight: 300;
+ 
+  span { 
+    color: #FFDE69;
+    font-family:"FoundersGroteskBold";
+  }
 
   @media only screen and (max-width: 599px) {
     padding-top: 2%;
-    font-size: 6vw;
+    font-size: 7.5vw;
   }
 `;
 

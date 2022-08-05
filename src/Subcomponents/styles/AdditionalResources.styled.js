@@ -128,17 +128,17 @@ export const ResourceCardCOPY = styled.div.attrs((props) => ({
     padding-bottom: 0rem;
   }
     h1 {
-      font-size: 4vw;
+      font-size: 6vw;
       padding-bottom: 0rem;
     }
 
     h3 {
-      font-size: 4vw;
+      font-size: 6vw;
       padding-bottom: 0rem;
     }
 
     p {
-      font-size: 3.5vw;
+      font-size: 5vw;
     }
   }
 `;
