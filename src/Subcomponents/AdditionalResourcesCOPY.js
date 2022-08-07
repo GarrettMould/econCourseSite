@@ -44,7 +44,7 @@ const AdditionalResourcesCOPY = (props) => {
     return (
       <GridColumn size={props.isMobile ? "12" : "10"}>
         <Padding height={props.isMobile ? "1.5px" : "2px"}>
-        <ResourceCardCOPY color={textColor}>
+        <ResourceCardCOPY paddingTop={i === 0 ? "0.5rem" : "5%"} color={textColor}>
           <div>
           <h3>{resource.type}</h3>
             <a href={resource.link}>

@@ -23,6 +23,7 @@ export const UnitButton = styled.button`
   border: none;
   outline: none;
   width: 100%;
+  padding: 0 !important;
 `;
 
 export const CloseResultsButton = styled.button`

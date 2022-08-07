@@ -14,7 +14,7 @@ export const PPTList = styled.ul`
 export const ListItem = styled.li.attrs((props) => ({
   color: props.color,
 }))`
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   font-size: 2.5vw;
 
   

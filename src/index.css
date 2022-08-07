@@ -2,6 +2,7 @@
   --primaryBlack: #3e3355;
   --primaryWhite: #fff;
   --borderColor: #004012;
+  --primaryYellow: #FFDE69;
   --emphasizedText: "CalibreSemibold";
   --lessEmphasizedText: "CalibreMedium";
   --backgroundSTOne: "rgba(255, 195, 0, 0.5)",
@@ -35,6 +36,21 @@ code {
 @font-face {
   font-family: FoundersGroteskBold;
   src: url(../public/fonts/FoundersGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: FoundersGroteskMedium;
+  src: url(../public/fonts/FoundersGrotesk-Medium.otf);
+}
+
+@font-face {
+  font-family: FoundersGroteskLight;
+  src: url(../public/fonts/FoundersGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: FoundersGroteskRegular;
+  src: url(../public/fonts/FoundersGrotesk-Regular.otf);
 }
 
 @font-face {

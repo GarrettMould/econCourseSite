@@ -43,7 +43,7 @@ export const UnitNumber = styled.div.attrs((props) => ({
   font-size: ${(props) => props.fontSize};
   text-align: ${(props) => props.textAlign};
   color: var(--primaryBlack);
-  font-family: var(--lessEmphasizedText);
+  font-family: var(--emphasizedText);
 `;
 
 export const UnitName = styled.div.attrs((props) => ({
@@ -54,13 +54,14 @@ export const UnitName = styled.div.attrs((props) => ({
   text-align: center;
   font-size: ${(props) => props.fontSize}; 
   color: var(--primaryBlack);
-  font-family: var(--lessEmphasizedText); 
+  font-family: "CalibreRegular";
+  
 `;
 
 export const UnitInfoContainerMobile = styled.div `
 position: absolute;
   height: 30%;
-  bottom: 10px;
+  bottom: 5px;
   left: 20px;
   display: flex;
   flex-direction: column;
@@ -69,4 +70,8 @@ position: absolute;
 
   
 `
-
+export const UnitIcon = styled.img.attrs((props) => ({
+  maxWidth: props.maxWidth,
+}))`
+  max-width: ${(props) => props.maxWidth};
+`

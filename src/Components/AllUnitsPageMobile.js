@@ -5,8 +5,10 @@ import { GridContainer, GridColumn, GridRow } from "./styles/Grid.styled";
 import { FlexRow, FlexColumn } from "./styles/FlexContainers.styled";
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLock, faChartLine, faSackDollar, faLandmark, faGavel } from '@fortawesome/free-solid-svg-icons';
+import unit1icon from "../Images/recession.png"
+import unit2icon from "../Images/team.png"
+import unit3icon from "../Images/government.png"
+import unit4icon from "../Images/law.png"
 
 import { PaddingTop } from "./styles/Containers.styled";
 
@@ -15,7 +17,8 @@ import {
   UnitNumber,
   UnitName,
   UnitInfoContainerMobile,
-  IconContainer
+  IconContainer, 
+  UnitIcon
 } from "./styles/AllUnitsPage.styled";
 
 import { UnitButton } from "../Elements/styles/Buttons.styled";
@@ -24,16 +27,17 @@ import { UnitButton } from "../Elements/styles/Buttons.styled";
 const AllUnitsPageMobile = (props) => {
   const mappedUnits = props.courseInfo.map((unit, i) => {
 
+    
     var icon; 
 
     if (i === 0) {
-      icon = <IconContainer><FontAwesomeIcon icon={faChartLine} size="3x" /></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit1icon} maxWidth="65px"></UnitIcon></IconContainer>
     } else if (i === 1)  {
-      icon = <IconContainer><FontAwesomeIcon icon={faSackDollar} size="3x"/></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit2icon} maxWidth="65px"></UnitIcon></IconContainer>
     } else if (i === 2) { 
-      icon = <IconContainer><FontAwesomeIcon icon={faLandmark} size="3x"/></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit3icon} maxWidth="65px"></UnitIcon></IconContainer>
     } else if (i === 3) { 
-      icon = <IconContainer><FontAwesomeIcon icon={faGavel} size="3x"/></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit4icon} maxWidth="65px"></UnitIcon></IconContainer>
     }
     
     return (
@@ -45,7 +49,7 @@ const AllUnitsPageMobile = (props) => {
               backgroundColor={unit.unitBackgroundColor}
               borderColor={unit.unitBorderColor}
             >
-              {(icon)}
+              {icon}
               <FlexRow width="100%" justifyContent="space-between">
                 <UnitInfoContainerMobile>
                   <UnitNumber textAlign="left" fontSize="4vw">Unit {unit.unitNumber}</UnitNumber>
@@ -62,7 +66,7 @@ const AllUnitsPageMobile = (props) => {
   return (
     <>
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      <GridContainer>
+      <GridContainer paddingBottom="10%">
         <GridRow>
           {mappedUnits}
         </GridRow>

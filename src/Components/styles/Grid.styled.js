@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const GridContainer = styled.div.attrs((props) => ({
   width: props.width,
+  props: props.paddingBottom,
 }))`
   width: ${(props) => props.width};
+  padding-bottom: ${(props) => props.paddingBottom};
 
   display: grid;
   gap: 1em;

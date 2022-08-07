@@ -78,13 +78,15 @@ export const ResourceCard = styled.div.attrs((props) => ({
 
 export const ResourceCardCOPY = styled.div.attrs((props) => ({ 
   color: props.color,
+  paddingTop: props.paddingTop,
 }))`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   background-color: transparent;
-  padding: 5% 0% 0% 0%;
+  padding-top: ${(props) => props.paddingTop};
+
 
   div { 
     padding-bottom: 1rem;

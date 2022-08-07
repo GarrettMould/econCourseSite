@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLock, faChartLine, faSackDollar, faLandmark, faGavel } from '@fortawesome/free-solid-svg-icons';
-
 import { PaddingTop } from "./styles/Containers.styled";
 
 
@@ -12,11 +9,16 @@ import {
   UnitNumber,
   UnitName,
   UnitInfoContainer,
-  IconContainer
+  IconContainer, 
+  UnitIcon
 } from "./styles/AllUnitsPage.styled";
 
 import { UnitButton } from "../Elements/styles/Buttons.styled";
 
+import unit1icon from "../Images/recession.png"
+import unit2icon from "../Images/team.png"
+import unit3icon from "../Images/government.png"
+import unit4icon from "../Images/law.png"
 
 const AllUnitsPage = (props) => {
 
@@ -24,16 +26,17 @@ const AllUnitsPage = (props) => {
 
   const mappedUnits = props.courseInfo.map((unit, i) => {
 
+   
     var icon; 
 
     if (i === 0) {
-      icon = <IconContainer><FontAwesomeIcon icon={faChartLine} size="5x" /></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit1icon} maxWidth="100px"></UnitIcon></IconContainer>
     } else if (i === 1)  {
-      icon = <IconContainer><FontAwesomeIcon icon={faSackDollar} size="5x"/></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit2icon}  maxWidth="100px"></UnitIcon></IconContainer>
     } else if (i === 2) { 
-      icon = <IconContainer><FontAwesomeIcon icon={faLandmark} size="5x"/></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit3icon}  maxWidth="100px"></UnitIcon></IconContainer>
     } else if (i === 3) { 
-      icon = <IconContainer><FontAwesomeIcon icon={faGavel} size="5x"/></IconContainer>
+      icon = <IconContainer><UnitIcon src={unit4icon}  maxWidth="100px"></UnitIcon></IconContainer>
     }
     
     return (
@@ -44,7 +47,7 @@ const AllUnitsPage = (props) => {
               backgroundColor={unit.unitBackgroundColor}
               borderColor={unit.unitBorderColor}
             >
-              {(icon)}
+              {icon}
               <UnitInfoContainer>
                 <UnitNumber textAlign="center" fontSize="2.25vw">{unit.unitNumber}</UnitNumber>
                 <UnitName width="90%" fontSize="1.75vw">{unit.unitName}</UnitName>
@@ -57,7 +60,7 @@ const AllUnitsPage = (props) => {
   });
   return (
     <>
-      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
+      <PaddingTop top={props.isMobile ? "8%" : "6%"}></PaddingTop>
       <GridContainer>
         <GridRow>{mappedUnits}</GridRow>
       </GridContainer>
