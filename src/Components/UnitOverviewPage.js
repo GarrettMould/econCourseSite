@@ -15,7 +15,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
 
   return (
     <>
-      <PaddingTop top={props.isMobile ? "10%" : "5%"}></PaddingTop>
+      <PaddingTop top={props.isMobile ? "10%" : "3%"}></PaddingTop>
       <UnitOverviewHeadline
         isMobile={props.isMobile}
         text={`Unit ${unit} - Lesson Materials`}
@@ -45,7 +45,7 @@ const UnitOverviewPage = ({ forwardedRef, ...props }) => {
         courseInfo={props.courseInfo}></AdditionalResourcesCOPY>      
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
       <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      <Link style={{ textDecoration: "none" }} to="/UnitTest"><TakePracticeTestButton onClick={props.resetTest}></TakePracticeTestButton></Link>
+      <Link style={{ textDecoration: "none" }} className={props.courseInfo[unit].unitTestUnlocked ? "enabled-link" : "disabled-link"}to="/UnitTest"><TakePracticeTestButton onClick={props.resetTest}></TakePracticeTestButton></Link>
       
     </>
   );
