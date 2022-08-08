@@ -56,7 +56,7 @@ const App = (props) => {
   const changeUnit = (e) => {
     console.log(e.currentTarget);
     e.preventDefault();
-    e.currentTarget.id == "previous"
+    e.currentTarget.id === "previous"
       ? setSelectedUnit(selectedUnit - 1)
       : setSelectedUnit(selectedUnit + 1);
   };
@@ -66,13 +66,13 @@ const App = (props) => {
     var id = e.currentTarget.id;
     console.log(id);
 
-    if (id == "1") {
+    if (id === "1") {
       setSelectedUnit(0);
-    } else if (id == "2") {
+    } else if (id === "2") {
       setSelectedUnit(1);
-    } else if (id == "3") {
+    } else if (id === "3") {
       setSelectedUnit(2);
-    } else if (id == "4") {
+    } else if (id === "4") {
       setSelectedUnit(3);
     } else {
       setSelectedUnit(0);
@@ -90,7 +90,7 @@ const App = (props) => {
       var inputElements = q.querySelectorAll("input:checked");
       console.log(inputElements);
 
-      if (inputElements.length == 0) {
+      if (inputElements.length === 0) {
         const blah = q.closest(".questionCard");
         blah.classList.add("redBorder");
       } else {

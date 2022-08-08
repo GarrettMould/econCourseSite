@@ -161,16 +161,7 @@ export var courseInformation = [
     ],
     additionalResources: [
       {
-        name: "Command and Market Systems (Khan Academy)",
-        type: "YouTube Video",
-        summary:
-          "A thorough explanation of the main differences between command systems and market systems.",
-        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
-        subtopic: 3,
-        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
-      },
-      {
-        name: "Real Life Examples of Scarcity",
+        name: "Real Life Examples of Opportunity Cost",
         type: "Web Article",
         summary:
           "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
@@ -179,22 +170,31 @@ export var courseInformation = [
         concepts: [{name: "Scarcity", subTopic: 1}, {name: "Opportunity Costs", subTopic: 1}],
       },
       {
-        name: "How Countries Across the World Rationed Vaccines",
-        type: "Podcast",
+        name: "Command and Market Systems (Khan Academy)",
+        type: "YouTube Video",
         summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+          "A thorough explanation of the main differences between command systems and market systems.",
+        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
         subtopic: 2,
-        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Non-Price Rationing", subTopic: 2}],
+        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
+      },
+      {
+        name: "Understanding the Invisible Hand",
+        type: "Web Article",
+        summary:
+          "An in-depth explanation of the invisible hand and Adam Smith's role in economics.",
+        link: "https://www.investopedia.com/terms/i/invisiblehand.asp",
+        subtopic: 3,
+        concepts: [{name: "Economic Systems", subTopic: 2}, {name: "The Invisible Hand", subTopic: 3}, {name: "Self-Interest", subTopic: 3}],
       },
       {
         name: "The Freest Economies in the World",
-        type: "YouTube Video",
+        type: "Website",
         summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+          "The Heritage Foundation ranks the world's freest economies, based on factors including property rights, business freedom, and trade freedom.",
+        link: "https://www.heritage.org/index/ranking",
         subtopic: 3,
-        concepts: [{name: "Scarcity", subTopic: 1}, {name: "3 Basic Questions", subTopic: 3}, {name: "Economic Systems", subTopic: 3}],
+        concepts: [{name: "Economic Systems", subTopic: 2}, {name: "3 Basic Questions", subTopic: 2}, {name: "Property Rights", subTopic: 3}],
       },
       {
         name: "Supply and Demand in 8 Minutes",
