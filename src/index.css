@@ -110,7 +110,7 @@ a:active {
 }
 
 .redBorder { 
-  border: 3px solid red !important; 
+  background-color: #ef535074 !important;
 }
 
 .swiper { 
@@ -128,7 +128,7 @@ a:active {
 
 .disabled-link { 
   pointer-events: none;
-  opacity: 0.65; 
+  opacity: 0.45; 
   cursor: not-allowed;
 }
 

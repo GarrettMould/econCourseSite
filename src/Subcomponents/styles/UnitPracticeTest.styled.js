@@ -6,7 +6,7 @@ export const QuestionCard = styled.div.attrs((props) => ({
 }))`
   display: flex;
   flex-direction: column;
-  background-color: ${(props) => props.backgroundColor};
+  background-color: rgba(226, 212, 255, 0.3);
   border: 3px solid var(--primaryBlack);
   border-radius: 15px;
 `;
@@ -24,7 +24,7 @@ export const QuestionText = styled.div.attrs((props) => ({
 }))`
   font-family: var(--lessEmphasizedText);
   color: ${(props) => props.textColor};
-  font-size: 2vw;
+  font-size: 2.25vw;
   padding-bottom: 1.5rem;
 
   @media only screen and (max-width: 599px) {
@@ -38,7 +38,7 @@ export const OptionLabel = styled.label`
   text-align: center;
   color: var(--primaryBlack);
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   padding-bottom: 1rem;
 
   &:hover {
@@ -58,11 +58,11 @@ export const OptionButton = styled.input.attrs((props) => ({
   position: relative;
   display: inline-block;
   background-color: var(--primaryWhite);
-  height: 1.4em;
-  width: 1.4em;
+  height: 1.6em;
+  width: 1.6em;
   border-radius: 100%;
   transition: all 0.2s ease-out;
-  border: 1px solid rgba(197, 197, 197, 0.4);
+  border: 2px solid rgba(197, 197, 197, 1);
   cursor: pointer;
   margin-right: 1rem;
   outline: none;
@@ -78,14 +78,14 @@ export const OptionButton = styled.input.attrs((props) => ({
     right: 0;
 
     transform: translateY(-50%);
-    background: ${(props) => props.backgroundColor};
+    background: rgba(226, 212, 255, 0.5);
     opacity: 0;
     border-radius: 100%;
-    transition: width 0.2s ease-out, height 0.2s ease-out;
+    
   }
 
   &:checked {
-    border: 1px solid rgba(197, 197, 197, 0.7);
+    border: 2px solid var(--primaryBlack);
   }
   &:checked:before {
     content: "";
@@ -97,14 +97,14 @@ export const OptionButton = styled.input.attrs((props) => ({
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    background: ${(props) => props.backgroundColor};
+    background: var(--primaryBlack);
     opacity: 100%;
     border-radius: 100%;
     transition: opacity 0.3s ease;
 
     @media only screen and (max-width: 599px) {
-      width: 80%;
-      height: 80%;
+      width: 60%;
+      height: 60%;
     }
   }
 `;
@@ -113,12 +113,12 @@ export const Message = styled.div`
   visibility: ${(props) => props.visibility};
   padding: ${(props) => props.padding};
   font-family: var(--lessEmphasizedText);
-  color: red;
+  color: #ef5350d5;
   font-size: ${(props) => props.fontSize};
 
   span {
     font-family: "CalibreRegular";
-    color: red;
+    color: #ef5350d5;
   }
 
   @media only screen and (max-width: 599px) {

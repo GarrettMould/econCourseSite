@@ -142,7 +142,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
           props.unansweredQuestions === true && props.isMobile
             ? "0.25rem 0rem 1rem 0rem"
             : props.unansweredQuestions === true
-            ? "0.5rem 0rem 1.5rem 0rem"
+            ? "0rem 0rem 2.5rem 0rem"
             : "0rem"
         }
         fontSize={
