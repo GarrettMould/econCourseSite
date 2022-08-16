@@ -30,6 +30,8 @@ import SubmitButton from "../Elements/SubmitButton";
 import UnitTestResultsBox from "./UnitTestResultsBox";
 
 const UnitPracticeTest = ({ forwardedRef, ...props }) => {
+
+  console.log(props.testFinished);
   let testQuestions = props.courseInfo[props.selectedUnit].unitPracticeTest;
 
   var unit = props.courseInfo[props.selectedUnit].unitNumber;
@@ -129,47 +131,49 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
     );
   });
 
+  var display; 
+
+  {props.testFinished ? display =  <UnitTestResultsBox incorrectQuestionsList={props.incorrectQuestionsList}unitTestScore={props.unitTestScore} unitTestLength={props.unitTestLength} selectedUnit={props.selectedUnit} courseInfo={props.courseInfo} resetTest={props.resetTest}></UnitTestResultsBox> : display = <><UnitOverviewHeadline
+  isMobile={props.isMobile}
+  text={`Unit ${unit} - Practice Test`}
+></UnitOverviewHeadline>
+<Message
+  ref={forwardedRef}
+  visibility={props.unansweredQuestions === true ? "visible" : "hidden"}
+  padding={
+    props.unansweredQuestions === true && props.isMobile
+      ? "0.25rem 0rem 1rem 0rem"
+      : props.unansweredQuestions === true
+      ? "0rem 0rem 2.5rem 0rem"
+      : "0rem"
+  }
+  fontSize={
+    props.unansweredQuestions && props.isMobile === true
+      ? "4.5vw"
+      : props.unansweredQuestions === true
+      ? "2vw"
+      : "0vw"
+  }
+>
+  Reminder: <span>Answer all questions before submitting</span>
+</Message><GridContainer width="100%">
+  <Form>
+    <GridRow>{mappedTestQuestions}</GridRow>
+  </Form>
+</GridContainer>
+<PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
+<SubmitButton
+    unitTestScore={props.unitTestScore}
+    tallyScore={props.tallyScore}
+  ></SubmitButton></> 
+}
+
   return (
     <>
-      <UnitOverviewHeadline
-        isMobile={props.isMobile}
-        text={`Unit ${unit} - Practice Test`}
-      ></UnitOverviewHeadline>
-      <Message
-        ref={forwardedRef}
-        visibility={props.unansweredQuestions === true ? "visible" : "hidden"}
-        padding={
-          props.unansweredQuestions === true && props.isMobile
-            ? "0.25rem 0rem 1rem 0rem"
-            : props.unansweredQuestions === true
-            ? "0rem 0rem 2.5rem 0rem"
-            : "0rem"
-        }
-        fontSize={
-          props.unansweredQuestions && props.isMobile === true
-            ? "4.5vw"
-            : props.unansweredQuestions === true
-            ? "2vw"
-            : "0vw"
-        }
-      >
-        Reminder: <span>Answer all questions before submitting</span>
-      </Message>
-      <GridContainer width="100%">
-        <Form>
-          <GridRow>{mappedTestQuestions}</GridRow>
-        </Form>
-      </GridContainer>
-      <PaddingTop top={props.isMobile ? "8%" : "5%"}></PaddingTop>
-      {props.testFinished ? <Link style={{ textDecoration: "none" }} to="/UnitTestResults">
-        <SubmitButton
-          unitTestScore={props.unitTestScore}
-          tallyScore={props.tallyScore}
-        ></SubmitButton>
-      </Link> : <SubmitButton
-          unitTestScore={props.unitTestScore}
-          tallyScore={props.tallyScore}
-        ></SubmitButton>}
+      
+      
+      {display}
+        
       
     </>
   );

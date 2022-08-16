@@ -54,7 +54,7 @@ export const UnitName = styled.div.attrs((props) => ({
   text-align: center;
   font-size: ${(props) => props.fontSize}; 
   color: var(--primaryBlack);
-  font-family: "CalibreRegular";
+  font-family: var(--lessEmphasizedText);
   
 `;
 

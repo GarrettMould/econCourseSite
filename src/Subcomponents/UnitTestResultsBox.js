@@ -23,8 +23,8 @@ const UnitTestResultsBox = (props) => {
 
   if (incorrectQuestions) {
     incorrectQuestions.forEach((q) => {
-      var formatted = "Q" + q;
-      incorrectQuestionsFinal.push(formatted);
+      
+      incorrectQuestionsFinal.push(q);
     });
   }
 
@@ -33,19 +33,19 @@ const UnitTestResultsBox = (props) => {
   var backgroundColor;
   var borderColor;
   var textColor;
-  if (unit == 1) {
+  if (unit === 1) {
     borderColor = "rgba(255, 195, 0, 0.2)";
     backgroundColor = "rgba(255, 195, 0, 0.5)";
     textColor = "rgba(255, 195, 0, 0.8)";
-  } else if (unit == 2) {
+  } else if (unit === 2) {
     borderColor = "rgba(3, 255, 6, 0.2)";
     backgroundColor = "rgba(3, 255, 6, 0.5)";
     textColor = "#03ff06";
-  } else if (unit == 3) {
+  } else if (unit === 3) {
     borderColor = "rgba(255, 3, 243, 0.2)";
     backgroundColor = "rgba(255, 3, 243, 0.5)";
     textColor = "#ff03f3";
-  } else if (unit == 4) {
+  } else if (unit === 4) {
     borderColor = "rgba(3, 42, 255, 0.2)";
     backgroundColor = "rgba(3, 42, 255, 0.5)";
     textColor = "#032aff";
@@ -57,7 +57,7 @@ const UnitTestResultsBox = (props) => {
 
   return (
     <>
-      <PaddingTop top="15%"></PaddingTop>
+      <PaddingTop top="5%"></PaddingTop>
       <FlexRow width="100%" justifyContent="center" alignItems="center">
         <ResultsBox
           backgroundColor={backgroundColor}
@@ -67,9 +67,7 @@ const UnitTestResultsBox = (props) => {
           <div>
             <h2>Final Results</h2>
             <h3>
-              {props.unitTestScore} out of {props.unitTestLength} correct &nbsp;
-              - &nbsp;
-              {(props.unitTestScore / props.unitTestLength) * 100}%&nbsp;
+              {props.unitTestScore} out of {props.unitTestLength} correct 
             </h3>
             <h4>
               <span>Missed Questions:</span>
@@ -77,7 +75,7 @@ const UnitTestResultsBox = (props) => {
             <h4>
               <span>{displayIncorrectQuestions}</span>
             </h4>
-            <Link style={{ textDecoration: "none" }} to="/UnitOverviewPage">
+            <Link style={{ textDecoration: "none" }} to="/">
               <CloseResultsButton onClick={props.resetTest}>
                 Close
               </CloseResultsButton>

@@ -10,8 +10,8 @@ export const ResultsBox = styled.div.attrs((props) => ({
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.backgroundColor};
-  border: 3px solid ${(props) => props.borderColor};
+  background-color: rgba(226, 212, 255, 0.3);
+  border: 3px solid var(--primaryBlack);
   border-radius: 15px;
 
   div {
@@ -19,14 +19,12 @@ export const ResultsBox = styled.div.attrs((props) => ({
   }
   h2 {
     font-family: var(--emphasizedText);
-    color: var(--primaryWhite);
     font-size: 3vw;
     text-align: center;
   }
 
   h3 {
     font-family: var(--lessEmphasizedText);
-    color: var(--primaryWhite);
     font-size: 2.5vw;
     text-align: center;
   }
@@ -39,7 +37,7 @@ export const ResultsBox = styled.div.attrs((props) => ({
 
   span {
     font-family: var(--lessEmphasizedText);
-    color: ${(props) => props.textColor};
+    color: rgba(130, 130, 130, 1);
   }
 
   @media only screen and (max-width: 599px) {

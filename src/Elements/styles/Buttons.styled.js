@@ -35,7 +35,7 @@ export const CloseResultsButton = styled.button`
   background-color: rgba(0, 0, 0, 0.7);
   color: var(--primaryWhite);
   border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  border-radius: 12px;
 
   @media only screen and (max-width: 599px) {
     font-size: 3.5vw;
