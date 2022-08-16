@@ -55,7 +55,7 @@ const AdditionalResourcesCOPY = (props) => {
         </ResourceCardCOPY>
         <FlexRow flexWrap="wrap">{resource.concepts.map((concept, i) => {
           return (
-            <ConceptBubble borderRadius={props.isMobile ? "10px" : "15px"} borderSize={props.isMobile ? "2px" : "3px"} backgroundColor={backgroundColor} borderColor={borderColor}><ConceptName fontSize={props.isMobile ? "3.5vw" : "1.2vw"}>{concept.name}</ConceptName></ConceptBubble>
+            <ConceptBubble borderRadius={props.isMobile ? "10px" : "12px"} borderSize={props.isMobile ? "2px" : "3px"} backgroundColor={backgroundColor} borderColor={borderColor}><ConceptName fontSize={props.isMobile ? "3.5vw" : "1.2vw"}>{concept.name}</ConceptName></ConceptBubble>
           ) 
         })}</FlexRow>
         </Padding>

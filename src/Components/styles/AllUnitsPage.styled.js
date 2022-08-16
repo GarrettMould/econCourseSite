@@ -12,7 +12,7 @@ export const UnitCard = styled.div.attrs((props) => ({
   width: 100%;
   height: ${(props) => props.height};
   background-color: ${(props) => props.backgroundColor};
-  border-radius: 15px;
+  border-radius: 12px;
 `;
 
 export const IconContainer = styled.div`

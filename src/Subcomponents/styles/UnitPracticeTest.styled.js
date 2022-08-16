@@ -8,7 +8,7 @@ export const QuestionCard = styled.div.attrs((props) => ({
   flex-direction: column;
   background-color: rgba(226, 212, 255, 0.3);
   border: 3px solid var(--primaryBlack);
-  border-radius: 15px;
+  border-radius: 12px;
 `;
 
 export const QuestionAnswerContainer = styled.div`

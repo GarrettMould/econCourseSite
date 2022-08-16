@@ -31,7 +31,7 @@ const UnitConceptList = (props) => {
     }
 
     return (
-      <ConceptBubble borderRadius={props.isMobile ? "10px" : "15px"} borderSize={props.isMobile ? "2px" : "3px"} fontSize={props.isMobile ? "3.5vw" : "1.4vw"}
+      <ConceptBubble borderRadius={props.isMobile ? "10px" : "12px"} borderSize={props.isMobile ? "2px" : "3px"} fontSize={props.isMobile ? "3.5vw" : "1.4vw"}
         backgroundColor={backgroundColor}
         borderColor={borderColor}
       >
