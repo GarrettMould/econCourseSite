@@ -121,7 +121,7 @@ export var courseInformation = [
       {
         name: "U1-L6: The Circular Flow of Income",
         subtopic: 2,
-        link: "https://docs.google.com/presentation/d/1o_9W_QbyXd3iMl316LCqPp1jv_dLPuZAFP-wTpbV1IM/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1ZupCUzTva1bC-eEgfUZnscNUkP0uEl0japIrGktbVew/edit?usp=sharing",
       },
       {
         name: "U1-L7: Market Economies",
@@ -211,167 +211,241 @@ export var courseInformation = [
         questionNumber: 1,
         subtopic: 1,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Which of the following is an example of a non-monetary incentive?",
         options: [
           {
-            name: "factors of production / resources",
+            name: "a holiday bonus",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "a sense of employee camaraderie", id: 2, isCorrect: true },
+          { name: "commission earned on sales", id: 3, isCorrect: false },
+          { name: "free health and dental insurance", id: 4, isCorrect: false },
         ],
       },
       {
         questionNumber: 2,
         subtopic: 1,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "True or False: If Mongolia exports leather goods to neighbouring countries, this transaction would be considered a leakage for the Mongolian economy.",
         options: [
           {
-            name: "factors of production / resources",
+            name: "True",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "False", id: 2, isCorrect: true },
         ],
       },
       {
         questionNumber: 3,
         subtopic: 1,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "In 2008 the United States government passed the Emergency Economic Stabilization Act in an attempt to stabilize a struggling economy. Which economist would likely agree with this action?",
         options: [
           {
-            name: "factors of production / resources",
+            name: "Adam Smith",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "Friedrich Von Hayek", id: 2, isCorrect: false },
+          { name: "John Maynard Keynes", id: 3, isCorrect: true },
+          { name: "Milton Freidman", id: 4, isCorrect: false },
         ],
       },
       {
         questionNumber: 4,
         subtopic: 2,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Over the past few years, the price of new automobiles in the US has increased dramatically. As a result, the demand for used automobiles has also increased (along with the price). This example shows which determinant of demand?",
         options: [
           {
-            name: "factors of production / resources",
+            name: "a change in population",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "a change in substitute goods", id: 2, isCorrect: true },
+          { name: "a change in complimentary goods", id: 3, isCorrect: false },
+          { name: "a change in tastes and preferences", id: 4, isCorrect: false },
         ],
       },
       {
         questionNumber: 5,
         subtopic: 2,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Employees provide their labor to companies in the _______________ and companies provide goods and services to consumers in the ___________________. ",
         options: [
           {
-            name: "factors of production / resources",
+            name: "labor market / factor market",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "product market / factor market", id: 2, isCorrect: false },
+          { name: "factor market / finished market", id: 3, isCorrect: false },
+          { name: "factor market / product market", id: 4, isCorrect: true },
         ],
       },
       {
         questionNumber: 6,
         subtopic: 2,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "The chart above shows the per capita GDP of China. As the per capita GDP has risen, the demand for luxury goods, domestic vacations, and automobiles has also increased. This is known as _______________",
         options: [
           {
             name: "factors of production / resources",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "the income effect", id: 2, isCorrect: true },
+          { name: "the substitution effect", id: 3, isCorrect: false },
+          { name: "the inflation effect", id: 4, isCorrect: false },
         ],
       },
       {
         questionNumber: 7,
         subtopic: 3,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "True or False: the employees that work at Apple are considered human capital.",
         options: [
           {
-            name: "factors of production / resources",
+            name: "true",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "false", id: 2, isCorrect: true },
         ],
       },
       {
         questionNumber: 8,
         subtopic: 3,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Which of the following is true? ",
         options: [
           {
-            name: "factors of production / resources",
+            name: "A change in quantity demand is shown by a movement along the demand curve",
             id: 1,
-            isCorrect: false,
+            isCorrect: true,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "A change in demand is shown by a movement along the demand curve ", id: 2, isCorrect: false },
+          { name: "Equilibrium is the point at which quantity demand is the greatest ", id: 3, isCorrect: false },
+          { name: "When the price of a good changes, that leads to a shift in demand", id: 4, isCorrect: false },
         ],
       },
       {
         questionNumber: 9,
         subtopic: 4,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "_________________________ uses price rationing to allocate goods and services, meaning that they are distributed based on ___________________________.",
         options: [
           {
-            name: "factors of production / resources",
+            name: "Market economies / who needs them most",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "Market economies / who is able to pay", id: 2, isCorrect: true },
+          { name: "Command economies / who needs them most", id: 3, isCorrect: false },
+          { name: "Command economies / who is able to pay ", id: 4, isCorrect: false },
         ],
       },
       {
         questionNumber: 10,
         subtopic: 4,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Which of the following is considered a leakage in the circular flow model of income?",
         options: [
           {
-            name: "factors of production / resources",
+            name: "government spending",
             id: 1,
             isCorrect: false,
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false },
+          { name: "investments", id: 2, isCorrect: false },
+          { name: "exports", id: 3, isCorrect: false },
+          { name: "taxes", id: 4, isCorrect: true },
+        ],
+      },
+      {
+        questionNumber: 11,
+        subtopic: 4,
+        questionText:
+          "_________________________ uses price rationing to allocate goods and services, meaning that they are distributed based on ___________________________.",
+        options: [
+          {
+            name: "Market economies / who needs them most",
+            id: 1,
+            isCorrect: false,
+          },
+          { name: "Market economies / who is able to pay", id: 2, isCorrect: true },
+          { name: "Command economies / who needs them most", id: 3, isCorrect: false },
+          { name: "Command economies / who is able to pay ", id: 4, isCorrect: false },
+        ],
+      },
+      {
+        questionNumber: 12,
+        subtopic: 4,
+        questionText:
+          "A budget deficit occurs when a government ___________ more money than it _______________",
+        options: [
+          {
+            name: "spends / earns",
+            id: 1,
+            isCorrect: true,
+          },
+          { name: "earns / spends", id: 2, isCorrect: false },
+        ],
+      },
+      {
+        questionNumber: 13,
+        subtopic: 4,
+        questionText:
+          "Evergrande is a company that borrowed money in order to fund real estate projects. This is an example of a company using ______________.",
+        options: [
+          {
+            name: "capital",
+            id: 1,
+            isCorrect: false,
+          },
+          { name: "collateral", id: 2, isCorrect: false },
+          { name: "interest", id: 3, isCorrect: false },
+          { name: "credit", id: 4, isCorrect: true },
+        ],
+      },
+      {
+        questionNumber: 14,
+        subtopic: 4,
+        questionText:
+          "Choose the answer that best describes the above situation.",
+        options: [
+          {
+            name: "The graph shows an increase in quantity demanded",
+            id: 1,
+            isCorrect: false,
+          },
+          { name: "The graph shows an increase in demand", id: 2, isCorrect: true },
+          { name: "The graph shows a decrease in quantity demanded", id: 3, isCorrect: false },
+          { name: "The graph shows a decrease in demand", id: 4, isCorrect: false },
+        ],
+      },
+      {
+        questionNumber: 15,
+        subtopic: 4,
+        questionText:
+          "The above graph shows a shift in demand for Toyota Camry's. Which of the following scenarios is a potential cause of this shift?",
+        options: [
+          {
+            name: "An increase in the cost of a substitute produce, the Honda Accord",
+            id: 1,
+            isCorrect: false,
+          },
+          { name: "An increase in the cost of the materials used to produce the Toyota Camry", id: 2, isCorrect: false },
+          { name: "New information gets revealed about the Toyota Camry's poor safety ratings ", id: 3, isCorrect: true},
+          { name: "The price of the Toyota Camry increases", id: 4, isCorrect: false },
         ],
       },
     ],
   },
   
   {
-    id: 1,
+    id: 12,
     unitNumber: 2,
     unitUnlocked: false,
     unitTestUnlocked: false, 

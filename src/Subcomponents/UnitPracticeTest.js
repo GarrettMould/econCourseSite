@@ -99,7 +99,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
                     {question.options[1].name}
                   </OptionLabel>
 
-                  <OptionLabel>
+                  {question.options[2] ? <OptionLabel>
                     <OptionButton
                       backgroundColor={backgroundColor}
                       borderColor={borderColor}
@@ -109,9 +109,9 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
                       value={question.options[2].isCorrect}
                     ></OptionButton>
                     {question.options[2].name}
-                  </OptionLabel>
+                  </OptionLabel> : null}
 
-                  <OptionLabel>
+                  {question.options[3] ? <OptionLabel>
                     <OptionButton
                       backgroundColor={backgroundColor}
                       borderColor={borderColor}
@@ -121,7 +121,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
                       value={question.options[3].isCorrect}
                     ></OptionButton>
                     {question.options[3].name}
-                  </OptionLabel>
+                  </OptionLabel> : null}
                 </FlexColumn>
               </InputGroup>
             </QuestionAnswerContainer>
