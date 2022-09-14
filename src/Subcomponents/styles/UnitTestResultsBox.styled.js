@@ -5,7 +5,7 @@ export const ResultsBox = styled.div.attrs((props) => ({
   borderColor: props.borderColor,
   textColor: props.textColor,
 }))`
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,12 +14,10 @@ export const ResultsBox = styled.div.attrs((props) => ({
   border: 3px solid var(--primaryBlack);
   border-radius: 15px;
 
-  div {
-    padding: 2rem;
-  }
+
   h2 {
     font-family: var(--emphasizedText);
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
   }
 
@@ -41,7 +39,7 @@ export const ResultsBox = styled.div.attrs((props) => ({
   }
 
   @media only screen and (max-width: 599px) {
-    width: 80%;
+    width: 90%;
 
     h2 {
       font-size: 6vw;
@@ -56,3 +54,19 @@ export const ResultsBox = styled.div.attrs((props) => ({
     }
   }
 `;
+
+export const ResultsBoxContentContainer = styled.div`
+  padding: 4rem;
+
+  @media only screen and (max-width: 599px) {
+    
+    padding: 2rem;
+  }
+
+`
+
+export const MissedQuestionsContainer = styled.div`
+  margin-top: 5px; 
+  margin-bottom: 10px;
+`;
+

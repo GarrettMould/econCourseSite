@@ -19,6 +19,7 @@ import {
   OptionButton,
   OptionLabel,
   Message,
+  QuestionImage,
 } from "./styles/UnitPracticeTest.styled";
 
 import UnitOverviewHeadline from "../Elements/UnitOverviewHeadline";
@@ -72,6 +73,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
               <QuestionText backgroundColor={backgroundColor}>
                 {question.questionNumber})&nbsp;{question.questionText}
               </QuestionText>
+              {question.image ? <QuestionImage src={question.image}></QuestionImage> : null}
 
               <InputGroup>
                 <FlexColumn>
@@ -84,7 +86,9 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
                       name={question.questionNumber}
                       value={question.options[0].isCorrect}
                     ></OptionButton>
+                    <div>
                     {question.options[0].name}
+                    </div>
                   </OptionLabel>
 
                   <OptionLabel>

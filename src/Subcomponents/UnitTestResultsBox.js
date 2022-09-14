@@ -12,6 +12,8 @@ import { PaddingTop } from "../Components/styles/Containers.styled";
 import { FlexRow } from "../Components/styles/FlexContainers.styled";
 import { CloseResultsButton } from "../Elements/styles/Buttons.styled";
 import { ResultsBox } from "./styles/UnitTestResultsBox.styled";
+import { MissedQuestionsContainer } from "./styles/UnitTestResultsBox.styled";
+import { ResultsBoxContentContainer } from "./styles/UnitTestResultsBox.styled";
 const UnitTestResultsBox = (props) => {
   let unit = props.courseInfo[props.selectedUnit].unitNumber;
 
@@ -57,30 +59,32 @@ const UnitTestResultsBox = (props) => {
 
   return (
     <>
-      <PaddingTop top="5%"></PaddingTop>
+      <PaddingTop top="8%"></PaddingTop>
       <FlexRow width="100%" justifyContent="center" alignItems="center">
         <ResultsBox
           backgroundColor={backgroundColor}
           borderColor={borderColor}
           textColor={textColor}
         >
-          <div>
+          <ResultsBoxContentContainer>
             <h2>Final Results</h2>
             <h3>
               {props.unitTestScore} out of {props.unitTestLength} correct 
             </h3>
+          <MissedQuestionsContainer>
             <h4>
               <span>Missed Questions:</span>
             </h4>
             <h4>
               <span>{displayIncorrectQuestions}</span>
             </h4>
+          </MissedQuestionsContainer>
             <Link style={{ textDecoration: "none" }} to="/">
               <CloseResultsButton onClick={props.resetTest}>
                 Close
               </CloseResultsButton>
             </Link>
-          </div>
+          </ResultsBoxContentContainer>
         </ResultsBox>
       </FlexRow>
     </>
