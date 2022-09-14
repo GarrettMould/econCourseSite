@@ -1,3 +1,9 @@
+import unit1_question14 from "../src/Images/Unit 1 Exam/question14.png";
+import unit1_question15 from "../src/Images/Unit 1 Exam/question15.png";
+
+
+
+
 export var courseInformation = [
   {
     id: 0,
@@ -367,7 +373,7 @@ export var courseInformation = [
         questionNumber: 11,
         subtopic: 4,
         questionText:
-          "_________________________ uses price rationing to allocate goods and services, meaning that they are distributed based on ___________________________.",
+          "_________________________ use price rationing to allocate goods and services, meaning that they are distributed based on ___________________________.",
         options: [
           {
             name: "Market economies / who needs them most",
@@ -413,7 +419,8 @@ export var courseInformation = [
         questionNumber: 14,
         subtopic: 4,
         questionText:
-          "Choose the answer that best describes the above situation.",
+          "Choose the answer that best describes the situation displayed in the graph.",
+        image: unit1_question14, 
         options: [
           {
             name: "The graph shows an increase in quantity demanded",
@@ -429,15 +436,16 @@ export var courseInformation = [
         questionNumber: 15,
         subtopic: 4,
         questionText:
-          "The above graph shows a shift in demand for Toyota Camry's. Which of the following scenarios is a potential cause of this shift?",
-        options: [
+          "The graph shows a shift in demand for Toyota Camry's. Which of the following scenarios is a potential cause of this shift?",
+        image: unit1_question15,
+          options: [
           {
             name: "An increase in the cost of a substitute produce, the Honda Accord",
             id: 1,
             isCorrect: false,
           },
-          { name: "An increase in the cost of the materials used to produce the Toyota Camry", id: 2, isCorrect: false },
-          { name: "New information gets revealed about the Toyota Camry's poor safety ratings ", id: 3, isCorrect: true},
+          { name: "An increase", id: 2, isCorrect: false },
+          { name: "New information ", id: 3, isCorrect: true},
           { name: "The price of the Toyota Camry increases", id: 4, isCorrect: false },
         ],
       },
