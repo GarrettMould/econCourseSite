@@ -341,16 +341,16 @@ export var courseInformation = [
         questionNumber: 9,
         subtopic: 4,
         questionText:
-          "_________________________ uses price rationing to allocate goods and services, meaning that they are distributed based on ___________________________.",
+          "The government in Country X increases taxes on lumber to discourage deforestation. At the same time, the population of Country X is growing at a rapid rate. What will likely happen to supply and demand for houses?",
         options: [
           {
-            name: "Market economies / who needs them most",
+            name: "supply will increase / demand will increase",
             id: 1,
             isCorrect: false,
           },
-          { name: "Market economies / who is able to pay", id: 2, isCorrect: true },
-          { name: "Command economies / who needs them most", id: 3, isCorrect: false },
-          { name: "Command economies / who is able to pay ", id: 4, isCorrect: false },
+          { name: "supply will decrease / demand will increase", id: 2, isCorrect: true },
+          { name: "supply will increase / demand will decrease", id: 3, isCorrect: false },
+          { name: "supply will decrease / demand will decrease", id: 4, isCorrect: false },
         ],
       },
       {
@@ -440,12 +440,12 @@ export var courseInformation = [
         image: unit1_question15,
           options: [
           {
-            name: "An increase in the cost of a substitute produce, the Honda Accord",
+            name: "An increase in the cost of a substitute good, the Honda Accord",
             id: 1,
             isCorrect: false,
           },
-          { name: "An increase", id: 2, isCorrect: false },
-          { name: "New information ", id: 3, isCorrect: true},
+          { name: "An increase in the cost of the materials used to produce the Toyota Camry", id: 2, isCorrect: false },
+          { name: "New information gets revealed about the Toyota Camry's poor safety ratings", id: 3, isCorrect: true},
           { name: "The price of the Toyota Camry increases", id: 4, isCorrect: false },
         ],
       },

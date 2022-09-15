@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import Form from "react-bootstrap/Form";
 
+
 import { InputGroup } from "react-bootstrap";
 
 import { FlexColumn } from "../Components/styles/FlexContainers.styled";
@@ -137,7 +138,10 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
 
   var display; 
 
-  {props.testFinished ? display =  <UnitTestResultsBox incorrectQuestionsList={props.incorrectQuestionsList}unitTestScore={props.unitTestScore} unitTestLength={props.unitTestLength} selectedUnit={props.selectedUnit} courseInfo={props.courseInfo} resetTest={props.resetTest}></UnitTestResultsBox> : display = <><UnitOverviewHeadline
+  {props.testFinished ? display =  <UnitTestResultsBox incorrectQuestionsList={props.incorrectQuestionsList}unitTestScore={props.unitTestScore} unitTestLength={props.unitTestLength} selectedUnit={props.selectedUnit} courseInfo={props.courseInfo} resetTest={props.resetTest}></UnitTestResultsBox> : display = 
+  <>
+  <PaddingTop top={props.isMobile ? "10%" : "0%"}></PaddingTop>
+  <><UnitOverviewHeadline
   isMobile={props.isMobile}
   text={`Unit ${unit} - Practice Test`}
 ></UnitOverviewHeadline>
@@ -170,6 +174,7 @@ const UnitPracticeTest = ({ forwardedRef, ...props }) => {
     unitTestScore={props.unitTestScore}
     tallyScore={props.tallyScore}
   ></SubmitButton></> 
+  </>
 }
 
   return (
