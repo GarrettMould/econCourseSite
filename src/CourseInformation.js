@@ -1,3 +1,4 @@
+import unit1_question6 from "../src/Images/Unit 1 Exam/question6.jpg";
 import unit1_question14 from "../src/Images/Unit 1 Exam/question14.png";
 import unit1_question15 from "../src/Images/Unit 1 Exam/question15.png";
 
@@ -263,7 +264,7 @@ export var courseInformation = [
         questionNumber: 4,
         subtopic: 2,
         questionText:
-          "Over the past few years, the price of new automobiles in the US has increased dramatically. As a result, the demand for used automobiles has also increased (along with the price). This example shows which determinant of demand?",
+          "Over the past few years, the price of new automobiles in the US has increased dramatically. This has led to an increase in demand for used automobiles. This example shows which determinant of demand?",
         options: [
           {
             name: "a change in population",
@@ -295,10 +296,11 @@ export var courseInformation = [
         questionNumber: 6,
         subtopic: 2,
         questionText:
-          "The chart above shows the per capita GDP of China. As the per capita GDP has risen, the demand for luxury goods, domestic vacations, and automobiles has also increased. This is known as _______________",
+          "The chart shows the per capita GDP of China. As the per capita GDP has risen, the demand for luxury goods, domestic vacations, and automobiles has also increased. This is known as _______________",
+          image: unit1_question6,
         options: [
           {
-            name: "factors of production / resources",
+            name: "the market effect",
             id: 1,
             isCorrect: false,
           },
@@ -311,7 +313,7 @@ export var courseInformation = [
         questionNumber: 7,
         subtopic: 3,
         questionText:
-          "True or False: the employees that work at Apple are considered human capital.",
+          "True or False: A surplus occurs when the price is set below the equilibrium price.",
         options: [
           {
             name: "true",
@@ -389,7 +391,7 @@ export var courseInformation = [
         questionNumber: 12,
         subtopic: 4,
         questionText:
-          "A budget deficit occurs when a government ___________ more money than it _______________",
+          "A budget deficit occurs when a government ___________ more money than it _______________.",
         options: [
           {
             name: "spends / earns",

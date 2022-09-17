@@ -22,6 +22,8 @@ export const FlexColumn = styled.div.attrs((props) => ({
 }))`
   display: flex;
   flex-direction: column;
-  justify-conent: ${(props) => props.justifyContent};
+  justify-content: ${(props) => props.justifyContent};
   align-items: ${(props) => props.alignItems};
 `;
+
+
