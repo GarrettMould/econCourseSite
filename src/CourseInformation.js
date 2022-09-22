@@ -457,7 +457,7 @@ export var courseInformation = [
   {
     id: 12,
     unitNumber: 2,
-    unitUnlocked: false,
+    unitUnlocked: true,
     unitTestUnlocked: false, 
     unitName: "Free Market and Business",
     unitBackgroundColor: "rgba(3, 255, 6, 0.5)",
@@ -466,182 +466,170 @@ export var courseInformation = [
 
     unitConcepts: [
       {
-        name: "Scarcity",
+        name: "Factors of Production",
         subtopic: 1,
       },
       {
-        name: "Opportunity Costs",
+        name: "Human Capital",
         subtopic: 1,
       },
       {
-        name: "Marginal Benefits",
+        name: "Physical Capital",
         subtopic: 1,
       },
       {
-        name: "Marginal Costs",
+        name: "PPC",
         subtopic: 1,
       },
       {
-        name: "Monetary Incentives",
+        name: "Allocative Efficiency",
         subtopic: 1,
       },
       {
-        name: "Non-Monetary Incentives",
+        name: "Underutilization",
         subtopic: 1,
       },
       {
-        name: "Price Rationing",
+        name: "Unachievable Points",
+        subtopic: 1,
+      },
+      {
+        name: "Sole Proprietorships",
         subtopic: 2,
       },
       {
-        name: "Non-Price Rationing",
+        name: "Partnerships",
         subtopic: 2,
       },
       {
-        name: "Allocation of Resources",
+        name: "Corporations and LLCs",
         subtopic: 2,
       },
       {
-        name: "Invisible Hand",
+        name: "Unlimited Liability",
+        subtopic: 2,
+      },
+      {
+        name: "Total Cost of Ownership",
+        subtopic: 2,
+      },
+      {
+        name: "Equity Financing",
+        subtopic: 2,
+      },
+      {
+        name: "Debt Financing",
+        subtopic: 2,
+      },
+      {
+        name: "Labor Unions",
         subtopic: 3,
       },
       {
-        name: "Self-Interest",
+        name: "Collective Bargaining",
         subtopic: 3,
       },
       {
-        name: "Property Rights",
+        name: "Minimum Wage",
         subtopic: 3,
       },
       {
-        name: "Determinants of Supply",
+        name: "Price Floors",
+        subtopic: 3,
+      },
+      {
+        name: "Signs of Economic Growth",
         subtopic: 4,
       },
       {
-        name: "Determinants of Demand",
+        name: "Outsourcing",
         subtopic: 4,
       },
       {
-        name: "Demand Schedules",
-        subtopic: 4,
-      },
-      {
-        name: "Supply Schedules",
-        subtopic: 4,
-      },
-      {
-        name: "Equilibrium",
+        name: "Foreign Direct Investment (FDI)",
         subtopic: 4,
       },
     ],
     unitLessons: [
       {
-        name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
+        name: "U2-L1: Factors of Production",
         subtopic: 1,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1uIdQMoCf8lv0gg5qhOq0MjcVqx22kn90ErRb1nlDE3k/edit?usp=sharing",
         
       },
       {
-        name: "U1-L2: Trade-Offs and Opportunity Costs",
+        name: "U2-L2: Production Possibilities Curves",
         subtopic: 1,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1XvQoX09qWH5uL1ZTfeQDwfUTvle83DhrEP8ckgRQqqY/edit?usp=sharing",
       },
       {
-        name: "U1-L3: Incentives (Monetary and Non-Monetary)",
-        subtopic: 1,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
-      },
-      {
-        name: "U1-L4: Three Fundamental Macroeconomic Questions",
+        name: "U2-L3: Forming a Business",
         subtopic: 2,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1WdZI7gANtLxtHXyjSGlrAJPKkeaW4vFgcvgIAuJTkQs/edit?usp=sharing",
       },
       {
-        name: "U1-L5: Basic Economic Systems",
+        name: "U2-L4: Types of Businesses",
         subtopic: 2,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1AotFtQYXz3ovcYRJP0a_o_JfQkdEu2DmY_1QUMfkGIU/edit?usp=sharing",
       },
       {
-        name: "U1-L6: Market Economies, Command Economies, Mixed Economies",
-        subtopic: 2,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
-      },
-      {
-        name: "U1-L7: The Benefits and Key Features of Market Economies",
+        name: "U2-L5: Labor and Labor Unions",
         subtopic: 3,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1ZOpgAsknvDWSLh45wxX4gC7R1ALBLbOGmfnw2GCgFl8/edit?usp=sharing",
       },
       {
-        name: "U1-L8: Adam Smith and The Wealth of Nations",
+        name: "U2-L6: The Supply and Demand of Labor",
         subtopic: 3,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing",
       },
       {
-        name: "U1-L9: An Introduction to Supply and Demand",
+        name: "U2-L7: Trade, Jobs, and Careers",
+        subtopic: 3,
+        link: "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing",
+      },
+      {
+        name: "U2-L8: Economic Growth and Capital",
         subtopic: 4,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1MRnJ0NMbPrSrtBmYXzgu9QxIdB17isJ4ULx1qabmIAQ/edit?usp=sharing",
       },
       {
-        name: "U1-L10: The Laws of Supply and Demand",
+        name: "U2-L9: International Trade and Economic Growth",
         subtopic: 4,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1zuvT-u6arHPYOzOkRuvim7NPKeTAvh-VliD-RsxgvXc/edit?usp=sharing",
       },
       {
-        name: "U1-L11: Non-Price Determinants of Supply and Demand",
-        subtopic: 4,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
-      },
-      {
-        name: "U1-L12: Unit 1 Review",
+        name: "Unit 2 Review Lesson",
         subtopic: 0,
-        link: "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing",
+        link: "https://docs.google.com/presentation/d/1VFmqyCd3n3i21fh_f4K0_zWtv_1QPuKDaKOBn9Ui66w/edit?usp=sharing",
       },
     ],
     additionalResources: [
       {
-        name: "Command and Market Systems (Khan Academy)",
+        name: "Factors of Production Explained",
         type: "YouTube Video",
         summary:
-          "A thorough explanation of the main differences between command systems and market systems.",
-        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
-        subtopic: 3,
-        concepts: [{name: "3 Basic Questions", subTopic: 2}, {name: "Economic Systems", subTopic: 2}],
-      },
-      {
-        name: "Real Life Examples of Scarcity",
-        type: "Web Article",
-        summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+          "A simple explanation of the factors of production",
+        link: "https://www.youtube.com/watch?v=VZD7dTSHmIo",
         subtopic: 1,
-        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Opportunity Costs", subTopic: 1}],
+        concepts: [{name: "Factors of Production", subTopic: 1}],
       },
       {
-        name: "How Countries Across the World Rationed Vaccines",
-        type: "Podcast",
-        summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
-        subtopic: 2,
-        concepts: [{name: "Scarcity", subTopic: 1}, {name: "Non-Price Rationing", subTopic: 2}],
-      },
-      {
-        name: "The Freest Economies in the World",
+        name: "The Minimum Wage: Does it Hurt Workers?",
         type: "YouTube Video",
         summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link: "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+          "A quick look at the debate over minimum wage laws by the Economist.",
+        link: "https://www.youtube.com/watch?v=8H4yp8Fbi-Y",
         subtopic: 3,
-        concepts: [{name: "Scarcity", subTopic: 1}, {name: "3 Basic Questions", subTopic: 3}, {name: "Economic Systems", subTopic: 3}],
+        concepts: [{name: "Minimum Wage", subTopic: 3}, {name: "Price Floors", subTopic: 3}, {name: "Outsourcing", subTopic: 4}],
       },
       {
-        name: "Supply and Demand in 8 Minutes",
+        name: "Minimum Wage and Price Floors (Khan Academy)",
         type: "YouTube Video",
         summary:
-          "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
-        link: "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
-        subtopic: 4,
-        concepts: [{name: "Equilibrium", subTopic: 4}, {name: "Determinants of Supply", subTopic: 4}, {name: "Determinants of Demand", subTopic: 4}]
+          "A detailed breakdown of the economic impact that minimum wage, and price floors in general, have on markets.",
+        link: "https://www.youtube.com/watch?v=j0c2vmFGbtk",
+        subtopic: 3,
+        concepts: [{name: "Minimum Wage", subTopic: 3}, {name: "Price Floors", subTopic: 3}],
       },
     ],
     unitPracticeTest: [
