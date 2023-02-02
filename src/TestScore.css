@@ -1,0 +1,11 @@
+.testScoreContainer {
+  padding-bottom: 20px;
+}
+.testScore {
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+.scoreBold {
+  font-weight: 600;
+}

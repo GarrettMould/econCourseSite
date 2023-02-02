@@ -1,0 +1,70 @@
+.wrapperTest {
+  display: flex;
+  flex-direction: column;
+  margin-left: -15px;
+}
+
+.cardTest {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.cardTestRowOne {
+  padding: 30px 30px 30px 30px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.testQuestion {
+  color: #121212;
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  line-height: 170%;
+}
+
+.testQuestionImage {
+  margin: 2.5rem 0rem;
+}
+
+.cardTestRowTwo {
+  background-color: rgba(245, 245, 245, 0.416);
+  padding: 30px 30px 30px 30px;
+}
+
+.testAnswersGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.testAnswerContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  width: 90%;
+}
+
+.testRadio {
+  margin-right: 10px;
+}
+
+.testRadio:hover {
+  cursor: pointer;
+}
+
+.testAnswerText {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+.testAnswerText:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .testQuestionImage {
+    max-width: 90%;
+  }
+}

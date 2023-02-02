@@ -1,0 +1,105 @@
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.listCards {
+  padding: 0px 0px 30px 0px !important;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card:first-child {
+  margin-left: 0px;
+}
+
+.card {
+  min-width: 350px;
+  min-height: 450px;
+  display: grid;
+  grid-template-rows: [row1] 90px [row2] 275px [row3] 150px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.cardRowOne {
+  padding: 30px 30px 15px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardType {
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  font-weight: 500;
+}
+
+.cardRowTwo {
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cardTitle {
+  font-size: 160%;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+.cardRowThree {
+  padding: 15px 30px 30px 30px;
+  display: flex;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.cardDescription {
+  font-size: 100%;
+  line-height: 200%;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardRowFour {
+  width: 100%;
+  justify-self: end;
+  background-color: rgba(245, 245, 245, 0.416);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.tokenContentContainerER {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.tokenTextER {
+  font-family: "Roboto", sans-serif;
+  font-size: 80%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 110%;
+  }
+
+  .cardDescription {
+    font-size: 100%;
+    line-height: 200%;
+    font-family: "Roboto", sans-serif;
+    overflow-y: scroll;
+  }
+}
