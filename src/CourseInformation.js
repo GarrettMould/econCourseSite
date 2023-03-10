@@ -1,13 +1,15 @@
 import question_4 from "../src/images/question_4.png";
 import question_5 from "../src/images/question_5.png";
 import question_6 from "../src/images/question_6.png";
+import question_14 from "../src/images/question_14.png";
+import question_15 from "../src/images/question_15.png";
 
 export var courseInformation = [
   {
     id: 0,
     unitNumber: 1,
     unitUnlocked: true,
-    unitTestUnlocked: false,
+    unitTestUnlocked: true,
     unitName: "Introduction to Economics",
     unitBackgroundColor: "#e2f2f0",
     unitSolidColor: "#9BD3CB",
@@ -155,7 +157,7 @@ export var courseInformation = [
       {
         name: "U1-L7: Market Economies",
         subtopic: 3,
-        completed9AI: false,
+        completed9AI: true,
         completed11ADN1: true,
         completed12AB3: true,
         link:
@@ -164,8 +166,8 @@ export var courseInformation = [
       {
         name: "U1-L8: The Benefits of Market Economies",
         subtopic: 3,
-        completed9AI: false,
-        completed11ADN1: false,
+        completed9AI: true,
+        completed11ADN1: true,
         completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/13pfMbCKgeSQqHHYjZmB7nMX_38Wh4kteIIdPbPisx0c/edit?usp=sharing"
@@ -173,27 +175,27 @@ export var courseInformation = [
       {
         name: "U1-L9: Free Enterprise",
         subtopic: 3,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1AtU0VCL3lXgSUvToMxtoVZMZRk96tmekjkrbCLZEEZs/edit?usp=sharing"
       },
       {
         name: "U1-L10: The Law of Demand",
         subtopic: 4,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1XDwf1OhOgJDjZ-CQ-Cptlxqf4T9uCsmlFonEQMpJ5QM/edit?usp=sharing"
       },
       {
         name: "U1-L11: The Law of Supply",
         subtopic: 4,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/14Qw7DHq2GRERipCqEeDb4wJyZInAHMs1tkQr-uEuc_M/edit?usp=sharing"
       },
@@ -201,23 +203,32 @@ export var courseInformation = [
         name:
           "U1-L12: Equilibrium / Shifts in Supply and Demand / Externalities",
         subtopic: 4,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1xbLpArB4j_-Wufx0dYj9czY73-Exk2m9V9pVn0XTWYM/edit?usp=sharing"
       },
       {
         name: "U1 Review",
         subtopic: 0,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1Rsr1lNZ5SX_BB_iy93D8GC7raT5md1GHDOcEWSjwk2Y/edit?usp=sharing"
       }
     ],
     additionalResources: [
+      {
+        name: "CIA World Factbook",
+        type: "Website",
+        summary:
+          "A website that provides detailed information about the economic systems of different countries.",
+        link: "https://www.cia.gov/the-world-factbook/",
+        subtopic: 2,
+        concepts: [{ name: "Economic Systems", subtopic: 2 }]
+      },
       {
         name: "Real Life Examples of Opportunity Cost",
         type: "Article",
@@ -533,6 +544,7 @@ export var courseInformation = [
       {
         questionNumber: 14,
         subtopic: 4,
+        image: question_14,
         questionText:
           "Choose the answer that best describes the situation displayed in the graph.",
         options: [
@@ -561,6 +573,7 @@ export var courseInformation = [
       {
         questionNumber: 15,
         subtopic: 4,
+        image: question_15,
         questionText:
           "The graph shows a shift in demand for Toyota Camry's. Which of the following scenarios is a potential cause of this shift?",
         options: [
@@ -595,7 +608,7 @@ export var courseInformation = [
   {
     id: 12,
     unitNumber: 2,
-    unitUnlocked: false,
+    unitUnlocked: true,
     unitTestUnlocked: false,
     unitName: "Free Market and Business",
     unitBackgroundColor: "#fdf0eb",
@@ -690,35 +703,35 @@ export var courseInformation = [
       {
         name: "U2-L1: Factors of Production",
         subtopic: 1,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1uIdQMoCf8lv0gg5qhOq0MjcVqx22kn90ErRb1nlDE3k/edit?usp=sharing"
       },
       {
         name: "U2-L2: Production Possibilities Curves",
         subtopic: 1,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1XvQoX09qWH5uL1ZTfeQDwfUTvle83DhrEP8ckgRQqqY/edit?usp=sharing"
       },
       {
         name: "U2-L3: Forming a Business",
         subtopic: 2,
-        completed9AI: false,
-        completed11ADN1: false,
-        completed12AB3: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1WdZI7gANtLxtHXyjSGlrAJPKkeaW4vFgcvgIAuJTkQs/edit?usp=sharing"
       },
       {
         name: "U2-L4: Types of Businesses",
         subtopic: 2,
-        completed9AI: false,
-        completed11ADN1: false,
+        completed9AI: true,
+        completed11ADN1: true,
         completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1AotFtQYXz3ovcYRJP0a_o_JfQkdEu2DmY_1QUMfkGIU/edit?usp=sharing"
@@ -726,7 +739,7 @@ export var courseInformation = [
       {
         name: "U2-L5: Labor and Labor Unions",
         subtopic: 3,
-        completed9AI: false,
+        completed9AI: true,
         completed11ADN1: false,
         completed12AB3: false,
         link:
